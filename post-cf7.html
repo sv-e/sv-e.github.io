@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Настройка Contact Form 7</title>
+
+    <meta name="description" content="Как настроить Contact Form 7 - самый популяный Wordpress плагин для формы обратной связи на сайте." >
+    <meta name="keywords" content="Contact Form 7, wordpress, Семенченко, html, css, front-end, верстка, веб разработка, портфолио" >
+    <meta name="author" content="SVE" >
+
+    <!-- google+ -->
+    <meta itemprop="name" content="Настройка Contact Form 7"/>
+    <meta itemprop="description" content="Как настроить Contact Form 7 - самый популяный Wordpress плагин для формы обратной связи на сайте."/>
+    <meta itemprop="image" content="images/blogs/screenshot.jpg"/>
+    <!-- facebook -->    
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Настройка Contact Form 7">
+    <meta property="og:description" content="Как настроить Contact Form 7 - самый популяный Wordpress плагин для формы обратной связи на сайте."/>
+    <meta property="og:image" content="images/blogs/screenshot.jpg"/>
+    <meta property="og:url" content="https://sve.github.io/post-cf7.html"/>
+    <meta property="og:site_name" content="SVE"/>
+    <meta property="og:see_also" content="https://sve-l.github.io"/>
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary"/> 
+    <meta name="twitter:site" content="@sve"/>
+    <meta name="twitter:title" content="Настройка Contact Form 7">
+    <meta name="twitter:description" content="Как настроить Contact Form 7 - самый популяный Wordpress плагин для формы обратной связи на сайте."/>
+    <meta name="twitter:creator" content="sve"/>
+    <meta name="twitter:image:src" content="images/blogs/screenshot.jpg"/>
+    <meta name="twitter:domain" content="https://sve-l.github.io"/>
+    <!-- Favicon Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900|Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
+    
+
+    <link rel="stylesheet" href="css/style.css">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/themes/prism.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/prism.min.js"></script>
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73888304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-73888304-1');
+    </script>
+</head>
+<body>
+	<div class="project">
+		<menu class="post-menu">
+			<a href="#Установка-Contact-Form-7">1. Установка Contact Form 7</a>
+			<a href="#Создание-шорткода-Contact-Form-7">2. Создание шорткода формы</a>
+			<a href="#Дополнительные-настройки-Contact-Form-7">3. Дополнительные настройки</a>
+			<a href="#Уведомления-Contact-Form-7">4. Уведомления</a>
+			<a href="#Настройка-отправки-Contact-Form-7">5. Настройка отправки</a>
+			<a href="#Поля-Contact-Form-7">6. Поля формы</a>
+			<a href="#Свои-теги-Contact-Form-7">7. Свои теги формы</a>			
+		</menu>
+
+		<div class="page-nav__bar post-bar">
+			<div class="page-nav__bar-inner">
+				<a href="index.html" class="post-back__link">
+				    <div id="menu-btn">
+				    	<i class="fas fa-long-arrow-alt-left"></i>
+				    	<span class="text">вернуться к портфолио</span>
+				    </div>
+				</a>
+				
+				<!-- <a href="index.html" class="modal-back"><span>←</span> вернуться к портфолио</a> -->
+
+				<a href="index.html" class="page__logo">
+				    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100px" height="50px" viewBox="0 0 100 50">
+				        <path fill="#FFFFFF" d="M34.334,15.034l11.718,22.928h6.869L41.304,15.034H34.334z M52.238,31.389l3.436,6.668l8.788-16.667
+				        l30.031-0.052l3.174-6.194l-36.642,0.026L52.238,31.389z M90.545,29.074H66.271l2.746-5.051h24.088 M88.904,32.343l-2.83,5.671
+				        h-24.24l2.898-5.671 M11.385,15.146v13.909c-1.658,0-3.082-0.682-4.27-2.046c-1.189-1.362-1.784-3.005-1.784-4.925
+				        c0-1.899,0.595-3.529,1.784-4.893C8.303,15.827,9.728,15.146,11.385,15.146z M2.417,38.063l2.929-5.72H23.33v5.712L2.417,38.063z
+				         M13.447,15.146h17.345V21.2H13.447V15.146z M13.447,29.055v-4.91h12.109c1.702,0,3.163,0.677,4.386,2.03
+				        c1.221,1.353,1.832,2.989,1.832,4.909c0,1.896-0.622,3.533-1.865,4.907c-1.243,1.376-2.749,2.063-4.517,2.063v-6.71
+				        c0-0.653-0.196-1.2-0.589-1.637c-0.393-0.435-0.884-0.653-1.473-0.653H13.447z"/>
+				    </svg>
+				</a>
+
+				<menu class="social__menu">
+				    <a href="https://www.behance.net/semenchenko" class="page-nav__link social__link social__link-behance" target="_blank">
+				        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+				    </a>
+
+				    <a href="https://codepen.io/semenchenko/" class="page-nav__link social__link social__link-codepen" target="_blank">
+				        <svg height="1792" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg"><path d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 182zm-411-275l334-223v-359l-603 402zm960 93l193 129v-258zm-138-93l269-180-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 13t-43-13l-819-546q-34-23-34-64v-546q0-41 34-64l819-546q21-13 43-13t43 13l819 546q34 23 34 64z"/></svg>
+				    </a>
+
+				    <a href="https://ru.stackoverflow.com/users/212421/hamster" class="page-nav__link social__link social__link-stackoverflow" target="_blank">
+				        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 21h-10v-2h10v2zm6-11.665l-1.621-9.335-1.993.346 1.62 9.335 1.994-.346zm-5.964 6.937l-9.746-.975-.186 2.016 9.755.879.177-1.92zm.538-2.587l-9.276-2.608-.526 1.954 9.306 2.5.496-1.846zm1.204-2.413l-8.297-4.864-1.029 1.743 8.298 4.865 1.028-1.744zm1.866-1.467l-5.339-7.829-1.672 1.14 5.339 7.829 1.672-1.14zm-2.644 4.195v8h-12v-8h-2v10h16v-10h-2z"/></svg>
+				    </a>
+
+				    <a href="https://github.com/lime7" class="page-nav__link social__link social__link-github" target="_blank">
+				        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+				    </a>
+				</menu>
+
+				<div class="language">
+				    <ul class="language__list">
+				        <li class="language__item active">
+				            <a href="#" class="language__link" id="ru">ru</a>
+				        </li>
+				        <li class="language__item">
+				            <a href="#" class="language__link" id="en">en</a>
+				        </li>
+				    </ul>
+				</div>
+			</div>			
+		</div>		
+
+		<article class="post">
+			<header class="post-head">
+				<h1 class="post-title">Настройка Contact Form 7</h1>
+				
+				<p class="post-meta">
+					<span class="post-date">
+						Февраль 1, 2018
+					</span> 
+				</p>
+			</header>
+
+			<div class="post-body">
+				<p>
+					<span>Contact Form 7</span> - <i>бесплатный и простой в настройке wordpress плагин формы обратной связи</i>.
+				</p>
+				<p>
+					<a href="https://contactform7.com/" target="_blank">contactform7.com</a> - <i>официальный сайт</i>.
+				</p>	
+				<p>
+					<a href="https://contactform7.com/docs/" target="_blank">Документация</a>.
+				</p>
+				<section id="Установка-Contact-Form-7">
+					<h2><a href="#Установка-Contact-Form-7">Установка Contact Form 7:</a></h2>
+					<p>
+						Установить плагин можно несколькими способами:						
+					</p>
+					<ol>
+						<li>
+							<span>Админ панель</span> &rarr; <span>Плагины</span> (<i>http://YOURDOMEN.com/wp-admin/plugins.php</i>). &rarr; <span>Добавить новый</span> и в поиске ввести - <span>Contact Form 7</span> &rarr; <span>Установить</span>.
+						</li>
+						<li>
+							<a href="https://wordpress.org/plugins/contact-form-7/">Скачать плагин с wordpress.org</a>. &rarr; Распаковать архив &rarr; Преместить папку с плагином в дирректорию wordpress - <code class="language-* language-markup">/wordpress/wp-content/plugins</code>
+						</li>
+					</ol>
+					<p>
+						После установки плагина, зайти в панель админа, найти в списке плагинов Contact Form 7 и <span>Активировать</span> его нажав на соответствующую кнопку.
+					</p>
+					<p>
+						В админ панели должен появится новый пункт меню - <span>Contact Form 7</span>.
+					</p>
+					<p>
+						<img src="images/blogs/Screenshot_9.png" alt="">
+					</p>
+				</section>
+
+				<section id="Создание-шорткода-Contact-Form-7">
+					<h2><a href="#Создание-шорткода-Contact-Form-7">Создание шорткода формы:</a></h2>
+
+					<p>
+						<span>Админ панель</span> &rarr; <span>Contact Form 7</span> &rarr; <span>Добавить новую</span>
+					</p>
+
+					<p>
+						В поле вводим название нашей обратной формы, например, <span>Contact Form 7</span>
+					</p>
+
+					<p>
+						При создании формы, шаблон формы стандартный с минимальным набором полей формы: <span>Имя</span>, <span>e-mail</span>, <span>Тема</span>, <span>Сообщение</span>, кнопка <span>Отправить</span>.
+					</p>
+
+					<p>
+						Далее сохраняем форму &rarr; <span>Сохранить</span>.
+					</p>
+
+					<p>
+						<img src="images/blogs/Screenshot_11.png" alt="">
+					</p>
+
+					<p>
+						После сохранения должно появится сообщение об удачном создании формы - <span class="b-green">Контактная форма создана</span>
+					</p>
+					<p>
+						А так же появится <span>шорткод</span> формы, который можно вставить в статью на страницу, запись или виджет, где нужно, чтобы форма отображалась:
+					</p>
+					<p><pre class=" language-markup"><code >[contact-form-7 id="93" title="Contact Form 7"]</code></pre></p>
+
+					<p>
+						Для добавления собственного класс форме, нужно добавить в шорткод - <code class="language-* language-markup">html_class="custom-form"</code>:
+					</p>
+
+					<p><pre class=" language-markup"><code>[contact-form-7 id="93" title="Contact Form 7" html_class="custom-form"]</code></pre></p>
+
+					<p>
+						Шорткод Contact Form 7 на тестовой странице:
+					</p>
+					<p>
+						<img src="images/blogs/Screenshot_21.png" alt="">
+					</p>
+					<p>
+						Использование шоткода в PHP файле:
+					</p>
+<p><pre class="language-php"><code class="language-php">&lt;?php
+  echo do_shortcode(
+    '[contact-form-7 id="93" title="Contact Form 7"]'
+  );
+?&gt;
+</code></pre></p>	
+
+				</section>
+				
+				<section id="Дополнительные-настройки-Contact-Form-7">
+					<h2><a href="#Дополнительные-настройки-Contact-Form-7">Дополнительные настройки</a></h2>
+
+					<p>
+						Вкладка <span>Дополнительные настройки</span>
+					</p>
+					<p>
+						<img src="images/blogs/Screenshot_20.png" alt="">
+					</p>
+					<br>
+					<p>
+						<code class="language-* language-markup">subscribers_only: true</code>  - <i>
+							только для зарегистрированных пользователей.
+						</i>
+					</p>
+					<p>
+						<code class="language-* language-markup">demo_mode: on</code>  - <i>
+							без отправки на почту.
+						</i>
+					</p>
+					<p>
+						<code class="language-* language-markup">acceptance_as_validation: on</code>  - <i>
+							Принудительная проверка полей.
+						</i>
+					</p>
+					<p>
+						<code class="language-* language-markup">on_sent_ok: "alert('sent ok');"</code>  - <i>
+							Выполнение (вывод сообщения 'sent ok') javascript после успешной отправки формы.
+						</i>
+					</p>
+					<p>
+						<code class="language-* language-markup">on_submit: "alert('submit');"</code>  - <i>
+							Выполнение (вывод сообщения 'sent ok') javascript при нажатии на кнопку "Отправить".
+						</i>
+					</p>
+					<p>
+						<a href="https://contactform7.com/additional-settings/" target="_blank">подробнее на оф. сайте</a>
+					</p>
+				</section>
+
+				<section id="Уведомления-Contact-Form-7">
+					<h2><a href="#Уведомления-Contact-Form-7">Уведомления</a></h2>
+
+					<p>
+						Вкладка <span>Уведомления при отправке формы</span>
+					</p>
+					<p>
+						<img src="images/blogs/Screenshot_17.png" alt="">
+					</p>
+					<p>
+						Настройка сообщений об успешной отправке письма или о какой-либо ошибке (некорректный адрес электронной почты, не заполненное обязательное поле).
+					</p>
+				</section>
+
+				<section id="Настройка-отправки-Contact-Form-7">
+					<h2><a href="#Настройка-отправки-Contact-Form-7">Настройка отправки</a></h2>
+
+					<p>
+						Вкладка <span>Письмо</span>
+					</p>
+					<p>
+						<img src="images/blogs/Screenshot_14.png" alt="">
+					</p>
+					<p>
+						<span>Кому</span> - <i> адрес, на который будут доставляться все сообщения.</i>- <br> <code class="language-* language-markup"> user@example.com </code>
+					</p>
+					<p>
+						<span>От кого</span> - <i>имя и электронный ящик, от кого пришло письмо</i> - <br> <code class="language-* language-markup">[your-name] < admin@wpsite.com > </code> <br> из шаблона <code class="language-* language-markup">Ваше имя (обязательно) [text* your-name] </code> 
+					</p>
+					<p>
+						<span class="b-org">* Если домен почты будет отличаться от домена сайта - форма будет выдавать ошибку.</span>
+					</p>
+					<p>
+						<span>Тема</span> - <i>тема письма</i> - <br> <code class="language-* language-markup">Landing [your-subject] </code> <br>из шаблона <code class="language-* language-markup">Тема [text your-subject]</code> 
+					</p>
+					<p>
+						<span>Дополнительные заголовки</span> - <i>на этот электронный ящик можно ответить нажав кнопку "Ответить" в почтовой программе</i> - <br> <code class="language-* language-markup">Reply-To: admin@wpsite.com </code> <br> 
+					</p>
+				</section>
+
+				<section id="Поля-Contact-Form-7">
+					<h2><a href="#Поля-Contact-Form-7">Поля формы</a></h2>
+
+					<p>
+						Стандартный минимальный шаблон при создании формы:
+					</p>
+
+<p><pre class="language-markup"><code><label>Ваше имя (обязательно)
+[text* your-name] </label>
+ 
+<label>Ваш e-mail (обязательно)
+[email* your-email] </label>
+ 
+<label>Тема
+[text your-subject] </label>
+ 
+<label>Сообщение
+[textarea your-message] </label>
+ 
+[submit "Отправить"]</code></pre></p>
+
+					
+					<p>
+						Поле формы с дополнительными атрибутами:
+					</p>
+<p><pre class="language-markup"><code><label>Ваше имя (обязательно)
+[text* your-name id:your-id class:custom-class class:add-class placeholder "Введите имя"] </label>
+</code></pre></p>		
+					
+					<p>
+						<code class="language-* language-markup">*</code> - <i>обязательное для заполнения поле</i>
+					</p>
+					<p>
+						<code class="language-* language-markup">text</code> - <i>тип поля (text, email, password, ...)</i>
+					</p>	
+					<p>
+						<code class="language-* language-markup">your-name</code> - <i>имя поля - </i> <code class="language-* language-markup">name="your-name"</code>
+					</p>
+					<p>
+						<code class="language-* language-markup">id:your-id</code> - <i>атрибут - </i> <code class="language-* language-markup">id="your-id"</code>
+					</p>
+					<p>
+						<code class="language-* language-markup">class:custom-class class:add-class</code> - <i>атрибут с несколькими значениями - </i> <code class="language-* language-markup">class="custom-class add-class"</code>
+					</p>
+					<p>
+						<code class="language-* language-markup">placeholder "Введите имя"</code> - <i>атрибут - </i> <code class="language-* language-markup">placeholder="Введите имя"</code>
+					</p>
+					<p>
+						<span class="b-green">
+							Просто строка <code class="language-* language-markup">"Введите имя"</code> без атрибута <code class="language-* language-markup">placeholder</code> - будет генерировать атрибут - <code class="language-* language-markup">value="Введите имя"</code>
+						</span>
+					</p>
+					<p>
+						Вид поля формы в html:
+					</p>	
+
+<p><pre class="language-markup"><code>&lt;span class="wpcf7-form-control-wrap your-name"&gt;
+	&lt;input type="text" name="your-name" id="your-id" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required custom-class add-class" aria-required="true" aria-invalid="false" placeholder="Введите имя"&gt;
+&lt;/span&gt;</code></pre></p>	
+					
+					<p>
+						Верстка более сложного поля формы:
+					</p>
+<p><pre class="language-markup"><code>&lt;div class="form-row"&gt;
+	&lt;label for="test-name" class="form-label">Как Вас зовут?*&lt;/label&gt;
+    [text* test-name id:test-name class:form-input placeholder "ФИО"]
+&lt;/div&gt;</code></pre></p>
+
+				</section>
+
+				<section id="Свои-теги-Contact-Form-7">
+					<h2><a href="#Свои-теги-Contact-Form-7">Свои теги Contact Form 7</a></h2>
+					
+					<p>
+						Особенность Contact Form 7 - генерировать дополнительные обертки в <code class="language-* language-markup">&lt;p&gt;</code> тег. Отступы в шаблоне кода создают дополнительные <code class="language-* language-markup">&lt;br&gt;</code> теги в html коде.
+					</p>
+					<p>
+						Решение - в файле wordpress/htdocs/<span>wp-config.php</span> задать константу - <code class="language-* language-markup">WPCF7_AUTOP</code> со значением <code class="language-* language-markup">false</code>:
+					</p>
+
+<p><pre class="language-markup"><code>define('WPCF7_AUTOP', false);</code></pre></p>
+	
+					<p>
+						Если есть необходимость избавится от обертки <code class="language-* language-markup">&lt;span class="wpcf7-form-control-wrap"&gt;&lt;/span&gt;</code> для любого типа поля.
+					</p>
+					<p>
+						В файле <span>functions.php</span> добавить фильтр:
+					</p>
+<p><pre class="language-markup"><code>add_filter('wpcf7_form_elements', function($content) {
+    $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+    return $content;
+});</code></pre></p>	
+					
+					<p>
+						<span class="b-org">
+							С добавлением фильтра, исчезнет не только дополнительная <code class="language-* language-markup">span</code> обертка для <code class="language-* language-markup">input</code>, но и стандартный вывод сообщений об ошибках для поля формы!
+						</span>
+					</p>
+
+				</section>
+			</div>
+
+			<footer class="post-footer">
+				<div class="post-share">
+
+					<span class="post-share__label">Расскажите друзьям:</span>
+
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style post-share__list">
+						<!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
+						<a class="a2a_button_facebook post-share__link">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a class="a2a_button_twitter post-share__link">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a class="a2a_button_google_plus post-share__link">
+							<i class="fab fa-google-plus-g"></i>
+						</a>
+						<a class="a2a_button_telegram post-share__link">
+							<i class="fab fa-telegram-plane"></i>
+						</a>
+						<a class="a2a_button_vk post-share__link">
+							<i class="fab fa-vk"></i>
+						</a>
+						<a class="a2a_button_linkedin post-share__link">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+
+				</div>				
+			</footer>
+
+
+			<a href="#" class="post-up"><i class="fas fa-arrow-up"></i></a>
+		</article>
+
+
+
+		<div class="post-comment">
+			<div id="disqus_thread"></div>
+			<script>
+
+			/**
+			*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'http://sve.github.io.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			                            
+		</div>
+	</div>
+
+	<script>
+		$(window).scroll(function(){
+		    if ($(this).scrollTop() > 100) {
+		        $('.post-up').fadeIn();
+		    } else {
+		        $('.post-up').fadeOut();
+		    }
+		});
+
+		//Click event to scroll to top
+		$('.post-up').click(function(){
+		    $('html, body').animate({scrollTop : 0},800);
+		    return false;
+		});
+
+
+		$('.post-menu a').on('click', function(e){
+		    e.preventDefault();
+
+		    var link = $(this).attr('href');
+
+		    var dir = link.replace(/#/, ''),
+		        section = $('#'+dir),
+		        //section = $('.section').filter('[data-section="' + dir + '"]'),
+		        pos = section.offset().top;
+
+		    $('html, body').animate({scrollTop: pos}, 1000);		    
+		});
+
+		$(document).scroll(function () {
+		   
+		    var position = $(document).scrollTop();	     
+		    
+		    $('.post section').each(function(i) {
+		        if($(this).position().top <= position) {
+		            $('.post-menu a').eq(i).addClass('active').siblings().removeClass('active');
+		        }
+		    });
+		}); 
+	</script>
+
+
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter35414655 = new Ya.Metrika({
+	                    id:35414655,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true,
+	                    trackHash:true
+	                });
+	            } catch(e) { }
+	        });
+	
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+	
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/35414655" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+</body>
+</html>

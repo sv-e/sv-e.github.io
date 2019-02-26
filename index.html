@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SVE - front-end developer</title>
+
+    <meta name="description" content="Hello, I am front-end developer. Thanks for coming to my portfolio." >
+    <meta name="keywords" content="html, css, front-end, верстка, веб разработка, портфолио" >
+    <meta name="author" content="SVE" >
+
+    <!-- google+ -->
+    <meta itemprop="name" content="SVE - front-end developer"/>
+    <meta itemprop="description" content="Hello, I am front-end developer. Thanks for coming to my portfolio."/>
+    <meta itemprop="image" content="images/pin-1.png"/>
+    <!-- facebook -->    
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SVE - front-end developer">
+    <meta property="og:description" content="Hello, I am front-end developer. Thanks for coming to my portfolio."/>
+    <meta property="og:image" content="images/pin-1.png"/>
+    <meta property="og:url" content="http://sve.github.io"/>
+    <meta property="og:site_name" content="Семенченко Елена"/>
+    <meta property="og:see_also" content="http://sve.github.io"/>
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary"/> 
+    <meta name="twitter:site" content="@sve"/>
+    <meta name="twitter:title" content="SVE - front-end developer">
+    <meta name="twitter:description" content="Hello, I am front-end developer. Thanks for coming to my portfolio."/>
+    <meta name="twitter:creator" content="SVE"/>
+    <meta name="twitter:image:src" content="images/pin-1.png"/>
+    <meta name="twitter:domain" content="http://sve.github.io"/>
+    <!-- Favicon Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900|Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73888304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-73888304-1');
+    </script>
+    
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader-sub">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100px" height="50px" viewBox="0 0 100 50">
+                <path fill="#FFFFFF" d="M34.334,15.034l11.718,22.928h6.869L41.304,15.034H34.334z M52.238,31.389l3.436,6.668l8.788-16.667
+                l30.031-0.052l3.174-6.194l-36.642,0.026L52.238,31.389z M90.545,29.074H66.271l2.746-5.051h24.088 M88.904,32.343l-2.83,5.671
+                h-24.24l2.898-5.671 M11.385,15.146v13.909c-1.658,0-3.082-0.682-4.27-2.046c-1.189-1.362-1.784-3.005-1.784-4.925
+                c0-1.899,0.595-3.529,1.784-4.893C8.303,15.827,9.728,15.146,11.385,15.146z M2.417,38.063l2.929-5.72H23.33v5.712L2.417,38.063z
+                 M13.447,15.146h17.345V21.2H13.447V15.146z M13.447,29.055v-4.91h12.109c1.702,0,3.163,0.677,4.386,2.03
+                c1.221,1.353,1.832,2.989,1.832,4.909c0,1.896-0.622,3.533-1.865,4.907c-1.243,1.376-2.749,2.063-4.517,2.063v-6.71
+                c0-0.653-0.196-1.2-0.589-1.637c-0.393-0.435-0.884-0.653-1.473-0.653H13.447z"/>
+            </svg>
+        </div>
+        <div id="status" class="loader">
+            <div></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo-loader">
+                    <fegaussianblur in="SourceGraphic" stddeviation="15" result="blur"></fegaussianblur>
+                    <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -7" result="goo"></fecolormatrix>
+                    <feblend in="SourceGraphic" in2="goo"></feblend>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    
+    <div class="project">   
+        <!-- Page Navigation : start -->
+        <nav class="page-nav">
+            <a href="#" class="page-nav__close close">×</a>
+        
+            <ul class="page-nav__menu">
+                <li class="page-nav__menu-item active">
+                    <a href="#intro" class="page-nav__menu-link" data-lang="menu_item_1">
+                        <strong>Home</strong>
+                        <hr>
+                        <span>About me</span>
+                    </a>
+                </li>
+                <li class="page-nav__menu-item">
+                    <a href="#work" class="page-nav__menu-link" data-lang="menu_item_2">
+                        <strong>Work</strong>
+                        <hr>
+                        <span>Last work</span>
+                    </a>
+                </li>
+                <!-- <li class="page-nav__menu-item">
+                    <a href="#contact" class="page-nav__menu-link" data-lang="menu_item_3">
+                        <strong>Contact</strong>
+                        <hr>
+                        <span>Call me</span>
+                    </a>
+                </li> -->
+            </ul>
+
+            <a href="index.html" class="page__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100px" height="50px" viewBox="0 0 100 50">
+                    <path fill="#FFFFFF" d="M34.334,15.034l11.718,22.928h6.869L41.304,15.034H34.334z M52.238,31.389l3.436,6.668l8.788-16.667
+                    l30.031-0.052l3.174-6.194l-36.642,0.026L52.238,31.389z M90.545,29.074H66.271l2.746-5.051h24.088 M88.904,32.343l-2.83,5.671
+                    h-24.24l2.898-5.671 M11.385,15.146v13.909c-1.658,0-3.082-0.682-4.27-2.046c-1.189-1.362-1.784-3.005-1.784-4.925
+                    c0-1.899,0.595-3.529,1.784-4.893C8.303,15.827,9.728,15.146,11.385,15.146z M2.417,38.063l2.929-5.72H23.33v5.712L2.417,38.063z
+                     M13.447,15.146h17.345V21.2H13.447V15.146z M13.447,29.055v-4.91h12.109c1.702,0,3.163,0.677,4.386,2.03
+                    c1.221,1.353,1.832,2.989,1.832,4.909c0,1.896-0.622,3.533-1.865,4.907c-1.243,1.376-2.749,2.063-4.517,2.063v-6.71
+                    c0-0.653-0.196-1.2-0.589-1.637c-0.393-0.435-0.884-0.653-1.473-0.653H13.447z"/>
+                </svg>
+            </a>
+
+            <!-- <div class="sub-link">
+                <a href="blog.html" data-lang="menu_blog">Blog</a>
+                <a href="donate.html" data-lang="menu_donate">Donate</a>
+            </div> -->
+
+            <div class="site-info">
+                <span data-lang="menu_portfolio">Portfolio by</span>&nbsp;&nbsp;<strong>SVE</strong>
+            </div>
+        </nav> <!-- Navigation : end -->
+
+        <!-- Page Navigation Bar : start -->
+        <div class="page-nav__bar ">
+            <div class="page-nav__bar-inner">
+                <a href="#" class="page-nav__link page-nav__trigger">
+                    <div id="menu-btn">
+                      <span class="icon"></span>
+                      <span class="text">MENU</span>
+                    </div>
+                </a>
+
+                <a href="index.html" class="page__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100px" height="50px" viewBox="0 0 100 50">
+                        <path fill="#FFFFFF" d="M34.334,15.034l11.718,22.928h6.869L41.304,15.034H34.334z M52.238,31.389l3.436,6.668l8.788-16.667
+                        l30.031-0.052l3.174-6.194l-36.642,0.026L52.238,31.389z M90.545,29.074H66.271l2.746-5.051h24.088 M88.904,32.343l-2.83,5.671
+                        h-24.24l2.898-5.671 M11.385,15.146v13.909c-1.658,0-3.082-0.682-4.27-2.046c-1.189-1.362-1.784-3.005-1.784-4.925
+                        c0-1.899,0.595-3.529,1.784-4.893C8.303,15.827,9.728,15.146,11.385,15.146z M2.417,38.063l2.929-5.72H23.33v5.712L2.417,38.063z
+                         M13.447,15.146h17.345V21.2H13.447V15.146z M13.447,29.055v-4.91h12.109c1.702,0,3.163,0.677,4.386,2.03
+                        c1.221,1.353,1.832,2.989,1.832,4.909c0,1.896-0.622,3.533-1.865,4.907c-1.243,1.376-2.749,2.063-4.517,2.063v-6.71
+                        c0-0.653-0.196-1.2-0.589-1.637c-0.393-0.435-0.884-0.653-1.473-0.653H13.447z"/>
+                    </svg>
+                </a>
+
+                <menu class="social__menu">
+                    <a href="https://www.behance.net/semenchenko" class="page-nav__link social__link social__link-behance" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+                    </a>
+
+                    <a href="https://codepen.io/semenchenko/" class="page-nav__link social__link social__link-codepen" target="_blank">
+                        <svg height="1792" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg"><path d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 182zm-411-275l334-223v-359l-603 402zm960 93l193 129v-258zm-138-93l269-180-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 13t-43-13l-819-546q-34-23-34-64v-546q0-41 34-64l819-546q21-13 43-13t43 13l819 546q34 23 34 64z"/></svg>
+                    </a>
+
+                    <a href="https://ru.stackoverflow.com/users/212421/hamster" class="page-nav__link social__link social__link-stackoverflow" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 21h-10v-2h10v2zm6-11.665l-1.621-9.335-1.993.346 1.62 9.335 1.994-.346zm-5.964 6.937l-9.746-.975-.186 2.016 9.755.879.177-1.92zm.538-2.587l-9.276-2.608-.526 1.954 9.306 2.5.496-1.846zm1.204-2.413l-8.297-4.864-1.029 1.743 8.298 4.865 1.028-1.744zm1.866-1.467l-5.339-7.829-1.672 1.14 5.339 7.829 1.672-1.14zm-2.644 4.195v8h-12v-8h-2v10h16v-10h-2z"/></svg>
+                    </a>
+
+                    <a href="https://github.com/lime7" class="page-nav__link social__link social__link-github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </menu>
+
+                <div class="language">
+                    <ul class="language__list">
+                        <li class="language__item">
+                            <a href="#" class="language__link" id="ru">ru</a>
+                        </li>
+                        <li class="language__item active">
+                            <a href="#" class="language__link" id="en">en</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </div> <!-- Navigation Bar : end -->
+        
+        <!-- Main content  : start -->
+        <main class="page-content js-page-scroll h-100"> 
+            <div class="page-content__inner h-100">
+                <div class="section h-100 section_intro" id="intro">
+                    <div class="intro h-100">
+                        <div class="intro-head">
+                            <hgroup class="intro-title">
+                                <h1>HTML & CSS</h1> 
+                                <h2 data-lang="intro_title">developer</h2>
+                            </hgroup>
+                        </div>
+                        <div class="section-body intro-body">
+                            <p data-lang="intro_meta">
+                                Hello, thanks for coming to my portfolio. My name is Elena. I'm Front-end developer since the beginning of 2013. I have working experience with large and small projects. My passion is to create clean and easy to use web sites. <br>You can be sure that I will provide an end product that is SEO-friendly, semantic, and completely valid. <br>
+                                Let's work together and we will make all your ideas come to reality.
+                            </p>
+
+                            <a href="Semenchenko-resume.pdf" class="intro-btn btn" target="_blank">
+                                <svg class="liquid-button"
+                                    data-height="48"
+                                    data-color1="#000"
+                                    data-color2="#ff5a00"
+                                    data-color3="#ff3a5d"
+                                    data-text="resume"
+                                    data-hover-factor="-10"
+                                ></svg>
+                            </a>
+                        </div>
+
+                        <div class="pin pin-intro pin-1">
+                            <img src="images/pin-11.png" alt="">
+                        </div>
+                    </div>                                   
+                </div>
+                <div class="section h-100 section_work" id="work">                    
+                    <div class="work h-100">
+                        <div class="work-column">
+                            <div class="work-item_first">
+                                <h2 class="section-title" data-lang="work_title">Works</h2>
+                                <div class="section-body">
+                                    <p data-lang="work_meta">
+                                        <!-- Working with -->
+                                        The last 4+ years I'm developing using the following technologies:
+                                    </p>                                    
+                                </div>
+                                <ul class="list-inline skills-list">
+                                    <li class="skills-item">
+                                        <span class="skills-link">#HTML5</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link">#CSS3</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link" data-tipso="Bootstrap 3 and 4 version. HTML/CSS framework">#Bootstrap</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link">#jQuery</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link">#Sass</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link" data-tipso="Version control system">#Git</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link" data-tipso="Build system automating tasks">#Gulp</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link" data-tipso="Adobe Photoshop is a graphics creator/editor">#Ps</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link" data-tipso="Adobe Illustrator is a graphics editor from Adobe Systems">#Ai</span>
+                                    </li>
+                                    <li class="skills-item">
+                                        <span class="skills-link" data-tipso="Settings Contact Form 7, ACF">#Wordpress</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="work-item">
+                                <a href="https://codepen.io/semenchenko/full/XKaYVN/" class="work-link" target="_blank">
+                                    <img src="images/works/work-4.png" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>UI Card</strong>
+
+                                            <svg class="work-ico">
+                                                <use xlink:href="#ico-share"></use>
+                                            </svg>                                  
+                                        </span>
+                                    </span> 
+                                </a>
+                            </div> 
+                        </div>
+
+                        <div class="work-column">
+                            <div class="work-item" >
+                                <a href="#modal-scanlite" class="work-link modal-trigger" data-modal="modal-scanlite">
+                                    <img src="images/works/work-14.jpg" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>SCANLITE</strong>      
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-scanlite" class="modal">
+                                    <div class="modal-bg modal-bg_pos-3">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="scanlite-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+                                                <pattern id="scanlite-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-7.jpg" x="0" y="0" />
+                                                </pattern>
+                                            </defs>
+                                            <mask id="scanlite-maska">
+                                                <g class="blobs" filter="url(#scanlite-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#scanlite-maska)' fill="url(#scanlite-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+
+                                            <div class="handle cursor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" class="cursor-ico">
+                                                    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M251.424,79.739c94.981,0,171.445,76.464,171.445,170.251
+                                                        c0,93.787-76.464,170.25-171.445,170.25c-94.385,0-171.446-76.464-171.446-170.25C79.978,156.203,157.039,79.739,251.424,79.739z"/>
+                                                    <path class="cursor-arrow" d="M27.372,232.859c2.234-1.341,5.094,0.269,5.094,2.886v28.489c0,2.617-2.86,4.227-5.094,2.887L3.63,252.874
+                                                        c-2.176-1.308-2.172-4.463,0-5.768L27.372,232.859z M496.369,247.106c2.172,1.305,2.177,4.46,0,5.767l-23.741,14.248
+                                                        c-2.234,1.34-5.095-0.27-5.095-2.887v-28.489c0-2.617,2.86-4.228,5.095-2.886L496.369,247.106z"/>
+                                                    <path class="cursor-arrow" d="M268.555,27.373c1.34,2.234-0.27,5.094-2.887,5.094H237.18c-2.617,0-4.227-2.859-2.887-5.094L248.541,3.63
+                                                        c1.307-2.176,4.461-2.172,5.766,0L268.555,27.373z M254.307,496.456c-1.305,2.172-4.459,2.176-5.767,0l-14.247-23.742
+                                                        c-1.34-2.234,0.27-5.094,2.887-5.094h28.488c2.617,0,4.227,2.859,2.886,5.094L254.307,496.456z"/>
+                                                </svg>
+                                            </div>
+                                            
+
+                                            <div class="work-description">
+                                                <h2 class="section-title">SCANLITE</h2>
+                                                <div class="section-body" data-lang="scanlite_line">
+                                                    <p>
+                                                        The company sells cash registers 
+                                                    </p> 
+                                                    <p>
+                                                        The task was to create cross browser and responsive multi-page site with bootstrap 3 framework.
+                                                    </p>  
+                                                    <p>
+                                                        Web technologys:
+                                                    </p>
+                                                    <ul>
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>Botstrap 3</li>
+                                                    </ul>
+                                                </div>  
+                                                <div class="section-bottom">
+                                                    <a href="http://semen4enko.esy.es/scanlite/" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-text="site link"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"                
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                </div>                      
+                                            </div>                    
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/scanlite/scanlite-1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/scanlite/scanlite-3.jpg" alt="">
+                                                </div>                       
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="work-item" >
+                                <a href="#modal-foodjistica" class="work-link modal-trigger" data-modal="modal-foodjistica">
+                                    <img src="images/works/work-12.jpg" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>foodjistica</strong>      
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-foodjistica" class="modal">
+                                    <div class="modal-bg modal-bg_pos-3">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="foodjistica-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+                                                <pattern id="foodjistica-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-1.jpg" x="0" y="0" />
+                                                </pattern>
+                                            </defs>
+                                            <mask id="foodjistica-maska">
+                                                <g class="blobs" filter="url(#foodjistica-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#foodjistica-maska)' fill="url(#foodjistica-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+
+                                            <div class="handle cursor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" class="cursor-ico">
+                                                    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M251.424,79.739c94.981,0,171.445,76.464,171.445,170.251
+                                                        c0,93.787-76.464,170.25-171.445,170.25c-94.385,0-171.446-76.464-171.446-170.25C79.978,156.203,157.039,79.739,251.424,79.739z"/>
+                                                    <path class="cursor-arrow" d="M27.372,232.859c2.234-1.341,5.094,0.269,5.094,2.886v28.489c0,2.617-2.86,4.227-5.094,2.887L3.63,252.874
+                                                        c-2.176-1.308-2.172-4.463,0-5.768L27.372,232.859z M496.369,247.106c2.172,1.305,2.177,4.46,0,5.767l-23.741,14.248
+                                                        c-2.234,1.34-5.095-0.27-5.095-2.887v-28.489c0-2.617,2.86-4.228,5.095-2.886L496.369,247.106z"/>
+                                                    <path class="cursor-arrow" d="M268.555,27.373c1.34,2.234-0.27,5.094-2.887,5.094H237.18c-2.617,0-4.227-2.859-2.887-5.094L248.541,3.63
+                                                        c1.307-2.176,4.461-2.172,5.766,0L268.555,27.373z M254.307,496.456c-1.305,2.172-4.459,2.176-5.767,0l-14.247-23.742
+                                                        c-1.34-2.234,0.27-5.094,2.887-5.094h28.488c2.617,0,4.227,2.859,2.886,5.094L254.307,496.456z"/>
+                                                </svg>
+                                            </div>
+                                            
+
+                                            <div class="work-description">
+                                                <h2 class="section-title">FOODJISTICA</h2>
+                                                <div class="section-body" data-lang="foodjistica_line">
+                                                    <p>
+                                                        Foodjistica helps buyers find and order delicious homemade food, and chefs find new customers.
+                                                    </p> 
+                                                    <p>
+                                                        The task was to create cross browser and responsive multi-page site with bootstrap 3 framework.
+                                                    </p>  
+                                                    <p>
+                                                        Web technologys:
+                                                    </p>
+                                                    <ul>
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>Botstrap 3</li>
+                                                    </ul>
+                                                </div>  
+                                                <div class="section-bottom">
+                                                    <a href="http://semen4enko.esy.es/foodjistica" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-text="site link"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"                
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                </div>                      
+                                            </div>                   
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/foodjistica/f-1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/foodjistica/f-2.jpg" alt="">
+                                                </div>                       
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+
+                        <div class="work-column">
+                            <div class="work-item" >
+                                <a href="#modal-yd" class="work-link modal-trigger" data-modal="modal-yd">
+                                    <img src="images/works/work-1.png" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>yappidesign</strong>      
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-yd" class="modal">
+                                    <div class="modal-bg modal-bg_pos-3">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="yp-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+                                                <pattern id="yp-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-7.jpg" x="0" y="0" />
+                                                </pattern>
+                                            </defs>
+                                            <mask id="yp-maska">
+                                                <g class="blobs" filter="url(#yp-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#yp-maska)' fill="url(#yp-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+
+                                            <div class="handle cursor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" class="cursor-ico">
+                                                    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M251.424,79.739c94.981,0,171.445,76.464,171.445,170.251
+                                                        c0,93.787-76.464,170.25-171.445,170.25c-94.385,0-171.446-76.464-171.446-170.25C79.978,156.203,157.039,79.739,251.424,79.739z"/>
+                                                    <path class="cursor-arrow" d="M27.372,232.859c2.234-1.341,5.094,0.269,5.094,2.886v28.489c0,2.617-2.86,4.227-5.094,2.887L3.63,252.874
+                                                        c-2.176-1.308-2.172-4.463,0-5.768L27.372,232.859z M496.369,247.106c2.172,1.305,2.177,4.46,0,5.767l-23.741,14.248
+                                                        c-2.234,1.34-5.095-0.27-5.095-2.887v-28.489c0-2.617,2.86-4.228,5.095-2.886L496.369,247.106z"/>
+                                                    <path class="cursor-arrow" d="M268.555,27.373c1.34,2.234-0.27,5.094-2.887,5.094H237.18c-2.617,0-4.227-2.859-2.887-5.094L248.541,3.63
+                                                        c1.307-2.176,4.461-2.172,5.766,0L268.555,27.373z M254.307,496.456c-1.305,2.172-4.459,2.176-5.767,0l-14.247-23.742
+                                                        c-1.34-2.234,0.27-5.094,2.887-5.094h28.488c2.617,0,4.227,2.859,2.886,5.094L254.307,496.456z"/>
+                                                </svg>
+                                            </div>
+                                            
+
+                                            <div class="work-description">
+                                                <h2 class="section-title">YAPPIDESIGN</h2>
+                                                <div class="section-body" data-lang="yp_line">
+                                                    <p>
+                                                        Functional creative and design studio. 
+                                                    </p>    
+                                                    <p>
+                                                        YAPPI Design create and implement ideas in the field of branding, event / promo, web design.
+                                                    </p>                            
+                                                    <p>
+                                                        The task was to create modern & simple animation and responsive site.
+                                                    </p>
+                                                    <p>
+                                                        I built a front-end pages using CSS3, HTML5, jQuery, svg.
+                                                    </p>
+                                                </div>  
+                                                <div class="section-bottom">
+                                                    <a href="http://www.yappidesign.com" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-text="site link"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"                
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                </div>                      
+                                            </div>                    
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/yp/3.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/yp/5.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/yp/6.jpg" alt="">
+                                                </div>                        
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="work-item work-item_blog w-lime">
+                                <a href="post-cf7.html" class="work-link" target="_blank">
+                                    <img src="images/blog-1.png" alt="">
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong data-lang="blog_cf7">Customizing <br> Contact Form 7</strong>
+                                            <span class="blog-meta">Blog post</span>
+
+                                            <svg class="work-ico">
+                                                <use xlink:href="#ico-share"></use>
+                                            </svg>
+                                        </span>
+                                    </span> 
+                                </a>
+                            </div>                         
+                        </div>
+
+                        <div class="work-column work-column_2h">
+                            <div class="work-item">
+                                <a href="#modal-spravnik" class="work-link modal-trigger" data-modal="modal-spravnik">
+                                    <img src="images/works/work-3.png" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Справникъ</strong>
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-spravnik" class="modal">
+                                    <div class="modal-bg modal-bg_pos-1">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="sp-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+                                                <pattern id="sp-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-5.jpg" x="0" y="0" />
+                                                </pattern>
+                                            </defs>
+                                            <mask id="sp-maska">
+                                                <g class="blobs" filter="url(#sp-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#sp-maska)' fill="url(#sp-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+                                            <div class="work-description">
+                                                <h2 class="section-title">Справникъ</h2>
+                                                <div class="section-body" data-lang="spravnik_line">
+                                                    <p>
+                                                        Extended repair technology APPLE and PC.
+                                                    </p>                            
+                                                    <p>
+                                                        The task was to create responsive site with an animated smartphone.
+                                                    </p>
+                                                    <p>
+                                                        For the animation I used ScrollMagic plugin. The smartphone changes appearance.
+                                                    </p>
+                                                    <p>
+                                                        I built a front-end pages using CSS3, HTML5, jQuery.
+                                                    </p>    
+                                                </div>
+                                                <div class="section-bottom">
+                                                    <a href="http://semen4enko.esy.es/spravnic/" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-text="site link"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"                
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                </div>                        
+                                            </div>                    
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/apple/1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/apple/2.jpg" alt="">
+                                                </div>                    
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work-column work-column_2w">
+                            <div class="work-column__inner">
+                                <div class="work-item">
+                                    <a href="https://www.behance.net/gallery/43880335/Blog-design" class="work-link" target="_blank">
+                                        <img src="images/works/work-5.png" alt="">
+
+                                        <span class="wave"></span>
+                                        <span class="mask">
+                                            <span class="inner">
+                                                <strong>SVE Blog</strong>
+
+                                                <svg class="work-ico">
+                                                    <use xlink:href="#ico-share"></use>
+                                                </svg>  
+                                            </span>
+                                        </span> 
+                                    </a>
+                                </div>
+
+                                <div class="work-item work-item_blog w-sky">
+                                    <a href="https://github.com/lime7/gulp-project" class="work-link" target="_blank">
+                                        <img src="images/blog-2.png" alt="">
+                                        <span class="mask">
+                                            <span class="inner">
+                                                <strong data-lang="blog_git">How To Build <br> Gulp</strong>
+                                                <span class="blog-meta">Blog post</span>
+
+                                                <svg class="work-ico">
+                                                    <use xlink:href="#ico-share"></use>
+                                                </svg>  
+                                            </span>
+                                        </span> 
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="work-column__inner work-column__inner_one">
+                                <div class="work-item">
+                                    <a href="https://codepen.io/semenchenko/full/adxboN/" class="work-link" target="_blank">
+                                        <img src="images/works/work-6.png" alt="">
+
+                                        <span class="wave"></span>
+                                        <span class="mask">
+                                            <span class="inner">
+                                                <strong>3d cube</strong>
+
+                                                <svg class="work-ico">
+                                                    <use xlink:href="#ico-share"></use>
+                                                </svg>
+                                            </span>
+                                        </span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work-column work-column_2h">
+                            <div class="work-item">
+                                <a href="#modal-restauran" class="work-link modal-trigger" data-modal="modal-restauran">
+                                    <img src="images/works/work-8.png" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Мастер Банкета</strong>
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-restauran" class="modal">
+                                    <div class="modal-bg modal-bg_pos-3">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="rt-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+                                                <pattern id="rt-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-5.jpg" x="0" y="0" />
+                                                </pattern>
+                                            </defs>
+                                            <mask id="rt-maska">
+                                                <g class="blobs" filter="url(#rt-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#rt-maska)' fill="url(#rt-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+                                            <div class="work-description">
+                                                <h2 class="section-title">Мастер Банкета</h2>
+                                                <div class="section-body" data-lang="mb_line">
+                                                    <p>
+                                                        Free system of search for banquet halls and restaurants for any kind of celebrations and activities.
+                                                    </p>
+                                                    <p>
+                                                        The task was to create cross browser and responsive site with jquery filter for halls.
+                                                    </p>
+                                                    <p>
+                                                        I built a front-end pages using CSS3, HTML5, jQuery.
+                                                    </p>
+                                                </div> 
+                                                <div class="section-bottom">
+                                                    <a href="http://banketmaster.ru/" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"
+                                                            data-text="site link"
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                </div>                       
+                                            </div>                    
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/restauran/1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/restauran/3.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/restauran/2.jpg" alt="">
+                                                </div>                    
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work-column">
+                            <div class="work-item">
+                                <a href="#modal-landing" class="work-link modal-trigger" data-modal="modal-landing">
+                                    <img src="images/works/work-2.png" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Landing Page</strong>
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-landing" class="modal">
+                                    <div class="modal-bg modal-bg_pos-4">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="lp-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+                                                <pattern id="lp-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-7.jpg" x="0" y="0" />
+                                                </pattern>
+                                            </defs>
+                                            <mask id="lp-maska">
+                                                <g class="blobs" filter="url(#lp-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#lp-maska)' fill="url(#lp-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+                                            <div class="work-description">
+                                                <h2 class="section-title">Landing Page</h2>
+                                                <div class="section-body" data-lang="lp_line">
+                                                    <p>
+                                                        Cross browser and responsive Landing page.
+                                                    </p>                            
+                                                    <p>
+                                                        The task was to create design site and html/css.
+                                                    </p>
+                                                    <p>
+                                                        Web technologys:
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            HTML
+                                                        </li>
+                                                        <li>
+                                                            CSS
+                                                        </li>
+                                                        <li>
+                                                            jQuery
+                                                        </li>
+                                                        <li>
+                                                            Parallax effect
+                                                        </li>
+                                                    </ul>      
+                                                </div>  
+                                                <div class="section-bottom">
+                                                    <a href="https://lime7.github.io/lp-simple/" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-text="site link"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"              
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                    <a href="https://www.behance.net/gallery/43880675/Landing-Page" class="link modal-link" target="_blank">project on Behance</a>
+                                                </div>                      
+                                            </div>                    
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/landing/max-115.jpg" alt="">
+                                                </div>                  
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="work-item">
+                                <a href="#modal-nn" class="work-link modal-trigger" data-modal="modal-nn">
+                                    <img src="images/works/work-9.png" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Сердце Нижнего</strong>
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-nn" class="modal">
+                                    <div class="modal-bg modal-bg_pos-2">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="nn-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+                                                <pattern id="nn-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-2.jpg" x="0" y="0" />
+                                                </pattern>
+                                                
+                                            </defs>
+                                            <mask id="nn-maska">
+                                                <g class="blobs" filter="url(#nn-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#nn-maska)' fill="url(#nn-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+                                            <div class="work-description">
+                                                <h2 class="section-title">Сердце Нижнего</h2>
+                                                <div class="section-body" data-lang="nn_line">
+                                                    <p>
+                                                        Residential complex of Nizhny Novgorod. 
+                                                    </p>                            
+                                                    <p>
+                                                        The task was to create cross browser and responsive site with background video.
+                                                    </p>
+                                                    <p>
+                                                        Web technologys:
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            HTML
+                                                        </li>
+                                                        <li>
+                                                            CSS
+                                                        </li>
+                                                        <li>
+                                                            jQuery
+                                                        </li>
+                                                    </ul>  
+                                                </div>
+                                                <div class="section-bottom">
+                                                    <a href="http://centernnov.ru" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-text="site link"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"                
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                </div>                        
+                                            </div>                    
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/nheart/1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/nheart/2.jpg" alt="">
+                                                </div>                     
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="work-column">
+                            <div class="work-item">
+                                <a href="#modal-email" class="work-link modal-trigger" data-modal="modal-email">
+                                    <img src="images/works/work-101.png" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>HTML Email</strong>
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-email" class="modal">
+                                    <div class="modal-bg modal-bg_pos-1">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="em-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+                                                <pattern id="em-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-4.jpg" x="0" y="0" />
+                                                </pattern>
+                                            </defs>
+                                            <mask id="em-maska">
+                                                <g class="blobs" filter="url(#em-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#em-maska)' fill="url(#em-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+                                            <div class="work-description">
+                                                <h2 class="section-title">HTML Email</h2>
+                                                <div class="section-body" data-lang="email_line"> 
+                                                    <p>
+                                                        I specialize in creating email templates in HTML CSS that will render across all email clients (Gmail, Outlook, Yahoo Mail, etc)
+                                                    </p>
+                                                    <p>
+                                                        I can also develop mobile responsiveness in email.
+                                                    </p>
+                                                </div> 
+                                                <div class="section-bottom">
+                                                    <a href="https://codepen.io/semenchenko/full/ojEvXO" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"
+                                                            data-text="email template"
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                </div>                       
+                                            </div>                    
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/mail/1.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/mail/2.jpg" alt="">
+                                                </div>                    
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="work-item">
+                                <a href="#modal-yourobot" class="work-link modal-trigger" data-modal="modal-yourobot">
+                                    <img src="images/works/work-11.png" alt="">
+
+                                    <span class="wave"></span>
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>YOUROBOT</strong>
+                                        </span>
+                                    </span> 
+                                </a>
+
+                                <div id="modal-yourobot" class="modal">
+                                    <div class="modal-bg modal-bg_pos-2">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="deco_blob">
+                                            <defs>
+                                                <filter id="yr-goo">
+                                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                                                </filter>
+
+
+                                                <pattern id="yr-pattern" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                                    <image class='twombly' xlink:href="images/bg-1.jpg" x="0" y="0" />
+                                                </pattern>
+                                                
+                                            </defs>
+                                            <mask id="yr-maska">
+                                                <g class="blobs" filter="url(#yr-goo)">
+                                                    <circle class="blob b-1" cx="340" cy="90" r="20" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-2" cx="280" cy="150" r="50" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-3" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-4" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-5" cx="340" cy="200" r="40" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+
+                                                    <circle class="blob b-6" cx="100" cy="250" r="35" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                    <circle class="blob b-7" cx="180" cy="190" r="80" transform="rotate(0) translate(0, 0) rotate(0) scale(1)" fill="#ffffff"/>
+                                                </g>
+                                            </mask>
+                                            <rect x="0" y="0" mask='url(#yr-maska)' fill="url(#yr-pattern)" width="400" height="400" class="rect" />
+                                        </svg>  
+                                    </div>
+
+                                    <div class="modal-content">                
+                                        <div class="modal-left ">
+                                            <a href="#" class="modal-back" data-lang="work_back"><span>←</span> back to work</a>
+                                            <div class="work-description">
+                                                <h2 class="section-title">YOUROBOT</h2>
+                                                <div class="section-body" data-lang="robot_line"> 
+                                                    <p>
+                                                        Callback widget on the web site.
+                                                    </p>
+                                                    <p>
+                                                        The task was to create animated button for widget and different position on the page.
+                                                    </p>
+                                                    <p>
+                                                        Web technologys:
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            HTML5
+                                                        </li>
+                                                        <li>
+                                                            CSS3
+                                                        </li>
+                                                        <li>
+                                                            jQuery
+                                                        </li>
+                                                    </ul> 
+                                                </div> 
+                                                <div class="section-bottom">
+                                                    <a href="http://yourrobot.ru/" class="btn modal-btn" target="_blank">
+                                                        <svg class="liquid-button"
+                                                            data-color1="#fff"
+                                                            data-color2="#ff5a00"
+                                                            data-color3="#ff3a5d"
+                                                            data-text="site link"
+                                                            data-width="152"
+                                                            data-height="38"
+                                                            data-force-factor="0.1"
+                                                            data-layer-1-viscosity="0.15"
+                                                            data-layer-2-viscosity="0.14"
+                                                            data-layer-1-mouse-force="100"
+                                                            data-layer-2-mouse-force="100"
+                                                            data-layer-1-force-limit="1"
+                                                            data-layer-2-force-limit="2"
+                                                        ></svg>
+                                                    </a>
+                                                </div>                       
+                                            </div>                    
+                                        </div>
+                                        
+                                        <div class="modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <img src="images/works/yourobot/max-24.jpg" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/works/yourobot/max-25.jpg" alt="">
+                                                </div>                    
+                                            </div>                    
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pin-2">
+                        <img src="images/pin-3.png" alt="">
+                    </div>
+                </div>
+                <div class="section section_contact h-100" id="contact">
+                    <div class="contact h-100">
+                        <h2 class="section-title" data-lang="contact_title">Contact</h2>
+
+                        <div class="section-body">
+                            <p class="contact-adress" data-lang="contact_adress">
+                                Ukraine <br>
+                                61070 KHARKOV
+                            </p>
+                            <p class="contact-phone">
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                            </p>
+                            <br>
+                            <p class="contact-links">
+                                <a href="skype:S_Elena_27?add" class="contact-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.987 13.966c1.357-7.765-5.416-14.412-13.052-12.979-5.821-3.561-12.503 3.226-8.935 9.029-1.387 7.747 5.384 14.48 13.083 13.01 5.832 3.536 12.493-3.26 8.904-9.06zm-10.603 5.891c-3.181 0-6.378-1.448-6.362-3.941.005-.752.564-1.442 1.309-1.442 1.873 0 1.855 2.795 4.837 2.795 2.093 0 2.807-1.146 2.807-1.944 0-2.886-9.043-1.117-9.043-6.543 0-2.938 2.402-4.962 6.179-4.741 3.602.213 5.713 1.803 5.917 3.289.101.971-.542 1.727-1.659 1.727-1.628 0-1.795-2.181-4.6-2.181-1.266 0-2.334.528-2.334 1.674 0 2.395 8.99 1.005 8.99 6.276-.001 3.039-2.423 5.031-6.041 5.031z"/></svg>
+                                    S_Elena_27
+                                </a>
+                            </p>
+                            <br>
+                            <p class="contact-info">
+                                <small data-lang="contact_info" >
+                                    Contact me for more details , i'll answer all your questions with pleasure.
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>       
+                           
+        </main> <!-- Main content  : end -->  
+        
+    </div>
+
+    <audio preload="auto" class="sound_player" id="sound">
+        <source type="audio/aac" src="media/clack.m4a">
+        <source type="audio/ogg; codecs=vorbis" src="media/clack.ogg">
+    </audio>
+
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="inject">
+        <!-- inject:svg --><svg xmlns="http://www.w3.org/2000/svg"><symbol id="bg" viewBox="0 0 500 330"><path opacity=".2" fill="#4C72A0" d="M0 0c300-1.128 155.667 307.332 500 330H0V0z"/><path opacity=".2" fill="#4C72A0" d="M0-.5C317.666 31.332 110.333 274 500 330l-500-.5V-.5z"/></symbol><symbol id="cursor" viewBox="0 0 500 500"><path fill="none" stroke="#000" stroke-miterlimit="10" d="M251.424 79.739c94.981 0 171.445 76.464 171.445 170.251s-76.464 170.25-171.445 170.25c-94.385 0-171.446-76.464-171.446-170.25 0-93.787 77.061-170.251 171.446-170.251z"/><path d="M27.372 232.859c2.234-1.341 5.094.269 5.094 2.886v28.489c0 2.617-2.86 4.227-5.094 2.887L3.63 252.874c-2.176-1.308-2.172-4.463 0-5.768l23.742-14.247zm468.997 14.247c2.172 1.305 2.177 4.46 0 5.767l-23.741 14.248c-2.234 1.34-5.095-.27-5.095-2.887v-28.489c0-2.617 2.86-4.228 5.095-2.886l23.741 14.247zM268.555 27.373c1.34 2.234-.27 5.094-2.887 5.094H237.18c-2.617 0-4.227-2.859-2.887-5.094L248.541 3.63c1.307-2.176 4.461-2.172 5.766 0l14.248 23.743zm-14.248 469.083c-1.305 2.172-4.459 2.176-5.767 0l-14.247-23.742c-1.34-2.234.27-5.094 2.887-5.094h28.488c2.617 0 4.227 2.859 2.886 5.094l-14.247 23.742z"/></symbol><symbol id="ico-share" viewBox="0 0 24 24"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"/></symbol><symbol id="ico-calendar" viewBox="0 0 24 24"><path d="M20 20h-4v-4h4v4zm-6-10h-4v4h4v-4zm6 0h-4v4h4v-4zM8 16H4v4h4v-4zm6 0h-4v4h4v-4zm-6-6H4v4h4v-4zm16-8v22H0V2h3v1c0 1.103.897 2 2 2s2-.897 2-2V2h10v1c0 1.103.897 2 2 2s2-.897 2-2V2h3zm-2 6H2v14h20V8zm-2-7a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V1zM6 3a1 1 0 1 1-2 0V1a1 1 0 1 1 2 0v2z"/></symbol><symbol id="ico-eye" viewBox="0 0 24 24"><path d="M12.015 7c4.751 0 8.063 3.012 9.504 4.636C20.118 13.473 16.806 17 12.015 17c-4.42 0-7.93-3.536-9.478-5.407C4.03 9.946 7.354 7 12.015 7zm0-2C4.446 5 0 11.551 0 11.551S4.835 19 12.015 19C19.748 19 24 11.551 24 11.551S19.709 5 12.015 5zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm-.004 3.999a1.446 1.446 0 1 1-2.044-2.046 1.446 1.446 0 0 1 2.044 2.046z"/></symbol><symbol id="ico-folder-13" viewBox="0 0 24 24"><path d="M0 10v12h24V10H0zm0-2V2h7c1.695 1.942 2.371 3 4 3h13v3h-2V7H11C8.66 7 7.463 5.612 6.084 4H2v4H0z"/></symbol><symbol id="ico-folder-20" viewBox="0 0 24 24"><path d="M7.972 2H1l.714 5h2.021l-.429-3H7c1.112 1.388 1.952 2 4.277 2h9.283l-.2 1h2.04l.6-3H11.277c-1.978 0-2.041-.417-3.305-2zM24 9H0l2 13h20l2-13z"/></symbol><symbol id="ico-time" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111a1.3 1.3 0 0 1-1.301-1.301c0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z"/></symbol></svg><!-- endinject -->
+    </div>
+
+
+    <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-73888304-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script> -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter35414655 = new Ya.Metrika({
+                        id:35414655,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true,
+                        trackHash:true
+                    });
+                } catch(e) { }
+            });
+    
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+    
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/35414655" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+    <!--[if lt IE 9]>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.10/es5-shim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <script src="js/vendor.js"></script>
+
+    <script src="js/liquid.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
