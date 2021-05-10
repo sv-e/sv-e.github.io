@@ -105,7 +105,8 @@ $(document).ready(function(){
                 nextArrow:'<button class="slick-next"><i class="fas fa-caret-right"></i></button>',
                 autoplay: true,
                 autoplaySpeed: 8000,
-                easing: 'swing', 
+                easing: 'swing',
+                adaptiveHeight: true, 
                 fade: true,
                 responsive: [                        
                     {

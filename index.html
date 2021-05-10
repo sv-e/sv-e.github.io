@@ -10,7 +10,8 @@
 
     <!-- Disable Phone number linking -->
     <meta name="format-detection" content="telephone=no">
-    <meta http-equiv="x-rim-auto-match" content="none">
+
+    <link rel="preload" href="css/style.css" as="style">
     
     <!-- Place favicon.ico in the root directory -->
     <!-- Favicon Icon -->
@@ -33,7 +34,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >   
         
     <!-- Vendor CSS -->
@@ -41,6 +43,9 @@
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/tipso/tipso.min.css"> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/themes/prism.min.css" />
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -53,13 +58,9 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-73888304-1');
-    </script>
-    
+    </script>    
 </head>
-<body>
-
-
-    
+<body>    
     <div class="project">         
 
         <!-- Page Header : start -->
@@ -67,7 +68,7 @@
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
                     
-                    <a href="#home" class="logo m_PageScroll2id">
+                    <a href="#home" class="logo m_PageScroll2id" aria-label="Navigation link">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100px" height="50px" viewBox="0 0 100 50">
                             <path fill="#FFFFFF" d="M34.334,15.034l11.718,22.928h6.869L41.304,15.034H34.334z M52.238,31.389l3.436,6.668l8.788-16.667
                             l30.031-0.052l3.174-6.194l-36.642,0.026L52.238,31.389z M90.545,29.074H66.271l2.746-5.051h24.088 M88.904,32.343l-2.83,5.671
@@ -78,62 +79,56 @@
                             c0-0.653-0.196-1.2-0.589-1.637c-0.393-0.435-0.884-0.653-1.473-0.653H13.447z"></path>
                         </svg>
                     </a>
-                    
 
                     <nav class="nav ml-auto">
                         <ul class="nav-list">
                             <li class="nav-item">
-                                <a href="#home" class="nav-link m_PageScroll2id">
-                                    Главная
+                                <a href="#home" class="nav-link m_PageScroll2id" aria-label="Navigation link">
+                                    Home
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#portfolio" class="nav-link m_PageScroll2id">
-                                    Работы
+                                <a href="#portfolio" class="nav-link m_PageScroll2id" aria-label="Navigation link">
+                                    Work
                                 </a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a data-fancybox data-src="#callback" href="javascript:;" class="nav-link">
-                                    Отправить Письмо
-                                </a>
-                            </li> -->
                         </ul>
                     </nav>
 
-                    <menu class="lang">
-                        <a href="/" class="active">ru</a>
-                        <a href="en.html">en</a>
-                    </menu>
+                    <!-- <menu class="lang">
+                        <a href="/"  aria-label="Language link">ru</a>
+                        <a href="en.html" class="active" aria-label="Language link">en</a>
+                    </menu> -->
 
                 </div>
             </div>
         </header> <!-- Page Header : end -->
 
         <!-- Main content  : start -->
-        <main class="page-content">            
+        <main class="page-content">           
             
             <div id="home" class="intro">
 
                 <div class="social">
                     <menu class="social-menu">
-                        <a href="https://www.behance.net/semenchenko" class="social-link" target="_blank">
+                        <a href="https://www.behance.net/semenchenko" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Social link">
                             <i class="fab fa-behance"></i>
                             <span>Behance</span>
                         </a>
 
-                        <a href="https://codepen.io/semenchenko/" class="social-link" target="_blank">
+                        <a href="https://codepen.io/semenchenko/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Social link">
                             <i class="fab fa-codepen"></i>
                             <span>Codepen</span>
                         </a>
 
-                        <a href="https://ru.stackoverflow.com/users/212421/hamster" class="social-link " target="_blank">
+                        <a href="https://ru.stackoverflow.com/users/212421/hamster" class="social-link " target="_blank" rel="noopener noreferrer" aria-label="Social link">
                             <i class="fab fa-stack-overflow"></i>
                             <span>
                                 ru.stackoverflow
                             </span>
                         </a>
 
-                        <a href="https://github.com/lime7" class="social-link" target="_blank">
+                        <a href="https://github.com/lime7" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Social link">
                             <i class="fab fa-github"></i>
                             <span>
                                 GitHub
@@ -146,25 +141,25 @@
                     <div class="row align-items-center">
                         
                         <div class="col-7">
-                           <div class="intro-inner">
-                               <div class="intro-head">
-                                   <h1 class="intro-title">
-                                       Front-end
-                                   </h1>
-                                   <div class="intro-subtitle">
-                                       developer
-                                   </div>
-                               </div>
+                            <div class="intro-inner">
+                                <div class="intro-head">
+                                    <h1 class="intro-title">
+                                        Front-end
+                                    </h1>
+                                    <div class="intro-subtitle">
+                                        developer
+                                    </div>
+                                </div>
 
-                               <div class="intro-body">
-                                   <p>
-                                       Привет, спасибо, что зашли на страничку моего портфолио. Меня зовут Елена. Я Front-end разработчик с начала 2013 года. У меня есть опыт работы с крупными и небольшими проектами. Моя страсть - верстать чистые и удобные веб-сайты. Вы можете быть уверены, что я дам конечный продукт, который является SEO-дружественным, семантическим и полностью валидным. 
-                                   </p>
+                                <div class="intro-body">
+                                    <p>
+                                        Hello, thanks for coming to my portfolio. My name is Elena. I'm Front-end developer since the beginning of 2013. I have working experience with large and small projects. My passion is to create clean and easy to use web sites. You can be sure that I will provide an end product that is SEO-friendly, semantic, and completely valid.                                         
+                                    </p>
 
-                                   <p>
-                                       Давайте работать вместе, и мы воплотим в жизнь все ваши идеи.
-                                   </p>
-                               </div>
+                                    <p>
+                                        Let's work together and we will make all your ideas come to reality.                                        
+                                    </p>
+                                </div>
 
                                <a href="Semenchenko-resume.pdf" target="_blank" class="btn">
                                    <svg class="liquid-button"
@@ -172,48 +167,46 @@
                                        data-color1="#000"
                                        data-color2="#ff5a00"
                                        data-color3="#ff3a5d"
-                                       data-text="Резюме"
+                                       data-text="Resume"
                                        data-hover-factor="-10"
                                    ></svg>
                                </a>
-                           </div>
+                            </div>
                         </div>
 
                         <div class="col-5">
                             <div class="intro-thumb">
-                                <img src="images/pin-11.png" alt="">
+                                ﻿<picture>
+                                    <source srcset="images/pin-11.webp" type="image/webp">
+                                    <img src="images/pin-11.png" alt="" loading="lazy" />
+                                </picture>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <div id="portfolio" class="portfolio section text-center">
-                
-                <div class="pin-3">
-                    <img src="images/pin-3.png" alt="">
-                </div>
 
                 <div class="container">
                     <div class="section-head ">
                         <h2 class="section-title">
-                            Мои <strong>работы</strong>
+                            My <strong>works</strong>
                         </h2>
                         <div class="section-meta">
                             <p>
-                                Несколько лучших проектов за крайние 4 года.
-                                Развиваюсь с использованием следующих технологий:
+                                The last 5+ years I'm developing using the following technologies:                                
                             </p>
-                            <p>                              
-                                    
-                                <span class="skills-link">#HTML5</span>                            
+                            <p>      
+                                <span class="skills-link">#HTML5</span>
                             
-                                <span class="skills-link">#CSS3</span>                            
+                                <span class="skills-link">#CSS3</span>
                             
-                                <span class="skills-link" data-tipso="Bootstrap 3 and 4 version. HTML/CSS framework">#Bootstrap</span>                            
+                                <span class="skills-link" data-tipso="Bootstrap 3 / 4 / 5 version. HTML/CSS framework">#Bootstrap</span>
                             
-                                <span class="skills-link">#jQuery</span>                            
+                                <span class="skills-link">#jQuery</span>
+
+                                <span class="skills-link">#JavaScript</span>
                             
                                 <span class="skills-link">#Sass</span>     
                                 
@@ -221,14 +214,17 @@
                             
                                 <span class="skills-link" data-tipso="Version control system">#Git</span>                            
                             
-                                <span class="skills-link" data-tipso="Build system automating tasks">#Gulp</span>                            
+                                <span class="skills-link" data-tipso="Build system automating tasks">#Gulp</span>  
+
+                                <span class="skills-link" data-tipso="Module bundler">#Webpack</span>
+
+                                <span class="skills-link" data-tipso="Figma:the collaborative interface design tool">#Figma</span>
                             
-                                <span class="skills-link" data-tipso="Adobe Photoshop is a graphics creator/editor">#Ps</span>                            
+                                <span class="skills-link" data-tipso="Adobe Photoshop is a graphics creator/editor">#Ps</span>
                             
-                                <span class="skills-link" data-tipso="Adobe Illustrator is a graphics editor from Adobe Systems">#Ai</span>                            
+                                <span class="skills-link" data-tipso="Adobe Illustrator is a graphics editor from Adobe Systems">#Ai</span>
                             
-                                <span class="skills-link" data-tipso="Settings Contact Form 7, ACF">#Wordpress</span>                                    
-                                
+                                <!-- <span class="skills-link" data-tipso="Settings Contact Form 7, ACF">#Wordpress</span>  -->
                             </p>
                         </div>
                     </div>
@@ -237,8 +233,137 @@
 
                         <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.1s">
                             <div class="portfolio-item">
-                                <a data-fancybox data-src="#modal-zenweb" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/min-17.png" alt="" class="img-fluid">
+                                <a data-fancybox data-src="#modal-1" href="javascript:;" class="portfolio-link" aria-label="portfolio">
+                                    <picture>
+                                        <source srcset="images/works/pic-1.webp" type="image/webp">
+                                        <img src="images/works/pic-1.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
+
+                                    <span class="wave"></span>
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Cat City</strong>      
+                                        </span>
+                                    </span>
+                                </a>
+
+                                <div id="modal-1" class="modal">  
+                                    <div class="row modal-content align-items-start">
+
+                                        <div class="col-4 modal-left">
+                                            <div class="portfolio-description">
+                                                <h2 class="section-title">Cat City</h2>
+                                                <div class="section-body" data-lang="scanlite_line">
+                                                    <p>
+                                                        <strong>Project:</strong> Landing page. Pet hotel for cats. 
+                                                    </p> 
+                                                    <p>
+                                                        <strong>Technologies:</strong> Figma, svg, CSS3, HTML5, Bootstrap 4 (flex), jQuery plugins.
+                                                    </p>
+                                                </div>  
+                                                <div class="section-bottom">
+                                                    <a href="http://semen4enko.esy.es/cats" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
+                                                        Preview
+                                                    </a>
+                                                    <a href="https://www.figma.com/file/czNPHAuVZRZk8lzd7FDXL2/Untitled?node-id=3%3A1" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">Figma design
+                                                    </a>
+                                                </div>                      
+                                            </div>  
+
+                                        </div>   
+
+                                        <div class="col-8 modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <picture>
+                                                        <source srcset="images/works/1/1.webp" type="image/webp">
+                                                        <img src="images/works/1/1.jpg" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>
+                                                <div class="item">
+                                                    <picture>
+                                                        <source srcset="images/works/1/2.webp" type="image/webp">
+                                                        <img src="images/works/1/2.jpg" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>                       
+                                            </div>                    
+                                        </div>   
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-item">
+                                <a data-fancybox data-src="#modal-2" href="javascript:;" class="portfolio-link" aria-label="portfolio">
+                                    <picture>
+                                        <source srcset="images/works/pic-2.webp" type="image/webp">
+                                        <img src="images/works/pic-2.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
+
+                                    <span class="wave"></span>
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Heliports</strong>      
+                                        </span>
+                                    </span>
+                                </a>
+
+                                <div id="modal-2" class="modal">  
+                                    <div class="row modal-content align-items-start">
+
+                                        <div class="col-4 modal-left">
+                                            <div class="portfolio-description">
+                                                <h2 class="section-title">Heliports</h2>
+                                                <div class="section-body" data-lang="scanlite_line">
+                                                    <p>
+                                                        <strong>Project:</strong> Website
+                                                    </p> 
+                                                    <p>
+                                                        <strong>Technologies:</strong> svg sprite, CSS3, HTML5, Bootstrap 4 (flex), jQuery plugins.
+                                                    </p>
+                                                </div>  
+                                                <div class="section-bottom">
+                                                    <a href="http://semen4enko.esy.es/heliports" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
+                                                        Preview
+                                                    </a>
+                                                </div>                      
+                                            </div>  
+
+                                        </div>   
+
+                                        <div class="col-8 modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <picture>
+                                                        <source srcset="images/works/2/1.webp" type="image/webp">
+                                                        <img src="images/works/2/1.jpg" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>
+                                                <div class="item">
+                                                    <picture>
+                                                        <source srcset="images/works/2/2.webp" type="image/webp">
+                                                        <img src="images/works/2/2.jpg" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>                       
+                                            </div>                    
+                                        </div>   
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-item">
+                                <a data-fancybox data-src="#modal-3" href="javascript:;" class="portfolio-link">
+                                    <picture>
+                                        <source srcset="images/works/pic-3.webp" type="image/webp">
+                                        <img src="images/works/pic-3.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
 
                                     <span class="wave"></span>
 
@@ -249,8 +374,8 @@
                                     </span>
                                 </a>
 
-                                <div id="modal-zenweb" class="modal">  
-                                    <div class="row modal-content align-items-center">
+                                <div id="modal-3" class="modal">  
+                                    <div class="row modal-content align-items-start">
 
                                         <div class="col-4 modal-left ">                 
 
@@ -258,20 +383,17 @@
                                                 <h2 class="section-title">ZenWeb</h2>
                                                 <div class="section-body" data-lang="scanlite_line">
                                                     <p>
-                                                        Landing page шаблон простейшего сайта.
+                                                        <strong>Project:</strong> Landing page.
                                                     </p> 
                                                     <p>
-                                                        Дизайн выполнен в figma. Заданы основные блоки большинства сайтов. Основные цвета: синий и голубой. Использованы svg иллюстрации.
-                                                    </p> 
-                                                    <p>
-                                                        Использованные технологии: CSS3, HTML5, Bootstrap 4 (flex), jQuery плагины, svg, svg smil анимация.
+                                                        <strong>Technologies:</strong> CSS3, HTML5, Bootstrap 4 (flex), jQuery plugins, svg, svg smil animation.
                                                     </p>
                                                 </div>  
                                                 <div class="section-bottom">
-                                                    <a href="http://semen4enko.esy.es/zenweb" class="link" target="_blank">
-                                                        Превью
+                                                    <a href="http://semen4enko.esy.es/zenweb" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
+                                                        Preview
                                                     </a>
-                                                    <a href="https://www.behance.net/gallery/77011671/ZenWeb" class="link" target="_blank">Дизайн на behance
+                                                    <a href="https://www.figma.com/file/aW2eZG7IemSOhtC4itMIYKQY/WPtest?node-id=0%3A1" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">Figma design
                                                     </a>
                                                 </div>                      
                                             </div>  
@@ -281,14 +403,88 @@
                                         <div class="col-8 modal-right">
                                             <div class="modal-slider">
                                                 <div class="item">
-                                                    <img data-lazy="images/works/zenweb/Intro.png" alt="">
+                                                    <picture>
+                                                        <source srcset="images/works/3/1.webp" type="image/webp">
+                                                        <img src="images/works/3/1.jpg" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
                                                 </div>
                                                 <div class="item">
-                                                    <img data-lazy="images/works/zenweb/Blog.png" alt="">
-                                                </div> 
+                                                    <picture>
+                                                        <source srcset="images/works/3/2.webp" type="image/webp">
+                                                        <img src="images/works/3/2.png" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>                        
+                                            </div>                    
+                                        </div>   
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-item">
+                                <a data-fancybox data-src="#modal-4" href="javascript:;" class="portfolio-link">
+                                    <picture>
+                                        <source srcset="images/works/pic-4.webp" type="image/webp">
+                                        <img src="images/works/pic-4.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
+
+                                    <span class="wave"></span>
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Auto</strong>      
+                                        </span>
+                                    </span>
+                                </a>
+
+                                <div id="modal-4" class="modal">  
+                                    <div class="row modal-content align-items-start">
+
+                                        <div class="col-4 modal-left ">                 
+
+                                            <div class="portfolio-description">
+                                                <h2 class="section-title">Car from USA</h2>
+                                                <div class="section-body" data-lang="scanlite_line">
+                                                    <p>
+                                                        <strong>Project:</strong> Website
+                                                    </p> 
+                                                    <p>
+                                                        <strong>Technologies:</strong> Figma, svg, CSS3, HTML5, Bootstrap 4 (flex), jQuery plugins.
+                                                    </p>
+                                                </div>  
+                                                <div class="section-bottom">
+                                                    <a href="http://semen4enko.esy.es/car" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
+                                                        Preview
+                                                    </a>
+                                                    <a href="https://www.figma.com/file/QYNKDsybkbsWj9nzRmK42C/Auto-from-USA?node-id=1%3A2" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">Figma design
+                                                    </a>
+                                                </div>                      
+                                            </div>  
+
+                                        </div>   
+
+                                        <div class="col-8 modal-right">
+                                            <div class="modal-slider">
                                                 <div class="item">
-                                                    <img data-lazy="images/works/zenweb/Form.png" alt="">
-                                                </div>                       
+                                                    <picture>
+                                                        <source srcset="images/works/4/1.webp" type="image/webp">
+                                                        <img src="images/works/4/1.png" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>
+                                                <div class="item">
+                                                    <picture>
+                                                        <source srcset="images/works/4/2.webp" type="image/webp">
+                                                        <img src="images/works/4/2.png" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>  
+                                                <div class="item">
+                                                    <picture>
+                                                        <source srcset="images/works/4/3.webp" type="image/webp">
+                                                        <img src="images/works/4/3.png" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>                      
                                             </div>                    
                                         </div>   
 
@@ -297,47 +493,207 @@
                             </div>
                         </div>
 
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.2s">
-                            <div class="portfolio-item">  
-                                <a data-fancybox data-src="#modal-yappidesign" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/work-1.png" alt="" class="img-fluid">
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.2s">
+                            <div class="portfolio-item">                                
+                                <a href="https://www.figma.com/file/Im0XLCuzg6DWvL1SapX4SR/Todo-List?node-id=1%3A2" target="_blank" class="portfolio-link" rel="noopener noreferrer" aria-label="Preview link">
+                                    <picture>
+                                        <source srcset="images/works/pic-5.webp" type="image/webp">
+                                        <img src="images/works/pic-5.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
 
                                     <span class="wave"></span>
 
                                     <span class="mask">
                                         <span class="inner">
-                                            <strong>YappiDesign</strong>      
+                                            <strong>Task list App</strong>      
+
+                                            <span class="portfolio-ico">
+
+                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
+                                            </span>
+
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div> 
+
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.2s">
+                            <div class="portfolio-item">                                
+                                <a href="https://codepen.io/semenchenko/full/XKaYVN/" target="_blank" class="portfolio-link" rel="noopener noreferrer" aria-label="Preview link">
+                                    <picture>
+                                        <source srcset="images/works/pic-6.webp" type="image/webp">
+                                        <img src="images/works/pic-6.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
+
+                                    <span class="wave"></span>
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Ui Card</strong>      
+
+                                            <span class="portfolio-ico">
+
+                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
+                                            </span>
+
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>   
+
+                        <div class="col-6 grid-item wow bounceInUp y-1" data-wow-delay="0.9s">
+                            <div class="portfolio-item">                                
+                                <a href="https://codepen.io/semenchenko/full/adxboN/" target="_blank" class="portfolio-link" rel="noopener noreferrer" aria-label="Preview link">
+                                    <picture>
+                                        <source srcset="images/works/pic-7.webp" type="image/webp">
+                                        <img src="images/works/pic-7.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
+
+                                    <span class="wave"></span>
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>3D Cube</strong>      
+
+                                            <span class="portfolio-ico">
+
+                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
+                                            </span>
+
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-item">
+                                <a data-fancybox data-src="#modal-8" href="javascript:;" class="portfolio-link">
+                                    <picture>
+                                        <source srcset="images/works/pic-8.webp" type="image/webp">
+                                        <img src="images/works/pic-8.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
+
+                                    <span class="wave"></span>
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>UralOxigen</strong>      
                                         </span>
                                     </span>
                                 </a>
 
-                                <div id="modal-yappidesign" class="modal">  
-                                    <div class="row modal-content align-items-center">
+                                <div id="modal-8" class="modal">  
+                                    <div class="row modal-content align-items-start">
 
                                         <div class="col-4 modal-left ">                 
 
                                             <div class="portfolio-description">
-                                                <h2 class="section-title">YAPPIDESIGN</h2>
+                                                <h2 class="section-title">UralOxigen</h2>
                                                 <div class="section-body" data-lang="scanlite_line">
                                                     <p>
-                                                        Functional creative and design studio.
+                                                        <strong>Project:</strong> Website
                                                     </p> 
                                                     <p>
-                                                        YAPPI Design создают и воплощают идеи в области брендинга, ивент / промо и веб дизайна.
-                                                    </p>  
-                                                    <p>
-                                                        Задача была создать адаптивный сайт с современной и простой анимацией.
-                                                    </p>
-                                                    <p>
-                                                        Для создания front-end страничек использованы: CSS3, HTML5, jQuery, svg.
+                                                        <strong>Technologies:</strong> CSS3, HTML5, Bootstrap 4 (flex), jQuery plugins.
                                                     </p>
                                                 </div>  
                                                 <div class="section-bottom">
-                                                    <a href="http://semen4enko.esy.es/yd/" class="link" target="_blank">
-                                                        Превью
+                                                    <a href="http://semen4enko.esy.es/UralOxigen" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
+                                                        Preview
                                                     </a>
-                                                    <a href="http://www.yappidesign.com" class="link" target="_blank">
-                                                        www.yappidesign.com
+                                                </div>                      
+                                            </div>  
+
+                                        </div>   
+
+                                        <div class="col-8 modal-right">
+                                            <div class="modal-slider">
+                                                <div class="item">
+                                                    <picture>
+                                                        <source srcset="images/works/8/1.webp" type="image/webp">
+                                                        <img src="images/works/8/1.jpg" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>
+                                                <div class="item">
+                                                    <picture>
+                                                        <source srcset="images/works/8/2.webp" type="image/webp">
+                                                        <img src="images/works/8/2.jpg" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div>                       
+                                            </div>                    
+                                        </div>   
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                        
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.2s">
+                            <div class="portfolio-item">                                
+                                <a href="https://www.figma.com/file/n7MGyUHyv4CCpuFqeXsxIC/Fucus-design?node-id=0%3A1" target="_blank" class="portfolio-link" rel="noopener noreferrer" aria-label="Preview link">
+                                    <picture>
+                                        <source srcset="images/works/pic-12.webp" type="image/webp">
+                                        <img src="images/works/pic-12.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
+
+                                    <span class="wave"></span>
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Fucus</strong>      
+
+                                            <span class="portfolio-ico">
+
+                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
+                                            </span>
+
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div> 
+
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.7s">
+                            <div class="portfolio-item">                                
+                                <a data-fancybox data-src="#modal-11" href="javascript:;" class="portfolio-link">
+                                    <picture>
+                                        <source srcset="images/works/pic-11.webp" type="image/webp">
+                                        <img src="images/works/pic-11.jpg" alt="" loading="lazy" class="img-fluid" />
+                                    </picture>
+
+                                    <span class="wave"></span>
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>Trans-Si</strong>      
+                                        </span>
+                                    </span>
+                                </a>
+
+                                <div id="modal-11" class="modal">  
+                                    <div class="row modal-content align-items-start">
+
+                                        <div class="col-4 modal-left ">                 
+
+                                            <div class="portfolio-description">
+                                                <h2 class="section-title">Trans-Si</h2>
+                                                <div class="section-body" data-lang="scanlite_line">
+                                                    <p>
+                                                        <strong>Project:</strong> Website
+                                                    </p> 
+                                                    <p>
+                                                        <strong>Technologies:</strong> CSS3, HTML5, Bootstrap 4 (flex), jQuery plugins (full page).
+                                                    </p>
+                                                </div>  
+                                                <div class="section-bottom">
+                                                    <a href="http://semen4enko.esy.es/trans-si" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
+                                                        Preview
+                                                    </a>
+                                                    <a href="http://trans-si.ru" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
+                                                        trans-si.ru
                                                     </a>
                                                     
                                                 </div>                      
@@ -348,26 +704,371 @@
                                         <div class="col-8 modal-right">
                                             <div class="modal-slider">
                                                 <div class="item">
-                                                    <img data-lazy="images/works/yp/3.jpg" alt="">
+                                                    <picture>
+                                                        <source srcset="images/works/11/1.webp" type="image/webp">
+                                                        <img src="images/works/11/1.png" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
                                                 </div>
                                                 <div class="item">
-                                                    <img data-lazy="images/works/yp/5.jpg" alt="">
-                                                </div>
+                                                    <picture>
+                                                        <source srcset="images/works/11/2.webp" type="image/webp">
+                                                        <img src="images/works/11/2.png" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
+                                                </div> 
                                                 <div class="item">
-                                                    <img data-lazy="images/works/yp/6.jpg" alt="">
+                                                    <picture>
+                                                        <source srcset="images/works/11/3.webp" type="image/webp">
+                                                        <img src="images/works/11/3.jpg" alt="" loading="lazy" class="img-fluid" />
+                                                    </picture>
                                                 </div>                       
                                             </div>                    
                                         </div>   
 
                                     </div>
                                 </div>
-                            </div>
-                        </div>                        
 
-                        <div class="col-3 grid-item wow bounceInUp y-2" data-wow-delay="0.3s">
+                            </div>
+                        </div>
+
+                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.4s">
+                            <div class="portfolio-item portfolio-blog bg-green">                                
+                                <a data-fancybox data-src="#modal-12" href="javascript:;" class="portfolio-link">
+
+                                    <span class="mask">
+                                        <span class="inner">
+                                            <strong>
+                                                Customizing <br>
+                                                Contact Form 7         
+                                            </strong> 
+
+                                            <span class="blog-meta">Blog post. *RU language</span>
+
+                                            <span class="portfolio-ico">
+                                                
+                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
+                                            </span>     
+                                        </span>
+                                    </span>
+                                </a>
+
+                                <div id="modal-12" class="modal">  
+                                    <div class="row modal-content align-items-center">
+
+                                        <div class="col-12 modal-left ">                 
+
+                                            <div class="portfolio-description">
+                                                <h2 class="section-title">Customizing Contact Form 7</h2>
+                                                <div class="section-body post-body" data-lang="scanlite_line">
+                                                    <p>
+                                                        <strong>Contact Form 7</strong> - <i>бесплатный и простой в настройке wordpress плагин формы обратной связи</i>.
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://contactform7.com/" target="_blank" rel="noopener noreferrer" aria-label="Target link">contactform7.com</a> - <i>официальный сайт</i>.
+                                                    </p>    
+                                                    <p>
+                                                        <a href="https://contactform7.com/docs/" target="_blank" rel="noopener noreferrer" aria-label="Target link">Документация</a>.
+                                                    </p>
+
+                                                    <section id="Установка-Contact-Form-7">
+                                                        <h4><a href="#Установка-Contact-Form-7" class="m_PageScroll2id">#</a> Установка Contact Form 7:</h4>
+                                                        <p>
+                                                            Установить плагин можно несколькими способами:                      
+                                                        </p>
+                                                        <ol>
+                                                            <li>
+                                                                <strong>Админ панель</strong> &rarr; <strong>Плагины</strong> (<i>http://YOURDOMEN.com/wp-admin/plugins.php</i>). &rarr; <strong>Добавить новый</strong> и в поиске ввести - <strong>Contact Form 7</strong> &rarr; <strong>Установить</strong>.
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://wordpress.org/plugins/contact-form-7/">Скачать плагин с wordpress.org</a>. &rarr; Распаковать архив &rarr; Преместить папку с плагином в дирректорию wordpress - <code class="language-* language-markup">/wordpress/wp-content/plugins</code>
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            После установки плагина, зайти в панель админа, найти в списке плагинов Contact Form 7 и <span>Активировать</span> его нажав на соответствующую кнопку.
+                                                        </p>
+                                                        <p>
+                                                            В админ панели должен появится новый пункт меню - <span>Contact Form 7</span>.
+                                                        </p>
+                                                        <p>
+                                                            <figure>
+                                                                <a href="images/blogs/Screenshot_9.png" data-fancybox aria-label="fancybox">
+                                                                    <img src="images/blogs/Screenshot_9.png" alt="" loading="lazy">
+                                                                </a>
+                                                                <!-- <figcaption>
+                                                                    админ панель wordpress
+                                                                </figcaption> -->
+                                                            </figure>
+                                                        </p>
+                                                    </section>
+
+                                                    <section id="Создание-шорткода-Contact-Form-7">
+                                                        <h4><a href="#Создание-шорткода-Contact-Form-7" class="m_PageScroll2id">#</a> Создание шорткода формы:</h4>
+
+                                                        <p>
+                                                            <strong>Админ панель</strong> &rarr; <strong>Contact Form 7</strong> &rarr; <strong>Добавить новую</strong>
+                                                        </p>
+
+                                                        <p>
+                                                            В поле вводим название нашей обратной формы, например, <strong>Contact Form 7</strong>
+                                                        </p>
+
+                                                        <p>
+                                                            При создании формы, шаблон формы стандартный с минимальным набором полей формы: <strong>Имя</strong>, <strong>e-mail</strong>, <strong>Тема</strong>, <strong>Сообщение</strong>, кнопка <strong>Отправить</strong>.
+                                                        </p>
+
+                                                        <p>
+                                                            Далее сохраняем форму &rarr; <strong>Сохранить</strong>.
+                                                        </p>
+
+                                                        <p>
+                                                            <figure>
+                                                                <a href="images/blogs/Screenshot_11.png" data-fancybox aria-label="fancybox">
+                                                                    <img src="images/blogs/Screenshot_11.png" alt="" loading="lazy">
+                                                                </a>
+                                                            </figure>
+                                                        </p>
+
+                                                        <p>
+                                                            После сохранения должно появится сообщение об удачном создании формы - <strong class="b-green">Контактная форма создана</strong>
+                                                        </p>
+                                                        <p>
+                                                            А так же появится <strong>шорткод</strong> формы, который можно вставить в статью на страницу, запись или виджет, где нужно, чтобы форма отображалась:
+                                                        </p>
+                                                        <p><pre class=" language-markup"><code >[contact-form-7 id="93" title="Contact Form 7"]</code></pre></p>
+
+                                                        <p>
+                                                            Для добавления собственного класс форме, нужно добавить в шорткод - <code class="language-* language-markup">html_class="custom-form"</code>:
+                                                        </p>
+
+                                                        <p><pre class=" language-markup"><code>[contact-form-7 id="93" title="Contact Form 7" html_class="custom-form"]</code></pre></p>
+
+                                                        <p>
+                                                            Шорткод Contact Form 7 на тестовой странице:
+                                                        </p>
+                                                        <p>
+                                                            <figure>
+                                                                <a href="images/blogs/Screenshot_21.png" data-fancybox aria-label="fancybox">
+                                                                    <img src="images/blogs/Screenshot_21.png" alt="" loading="lazy">
+                                                                </a>
+                                                            </figure>
+                                                        </p>
+                                                        <p>
+                                                            Использование шоткода в PHP файле:
+                                                        </p>
+                                                        <p><pre class="language-php"><code class="language-php">&lt;?php
+                            echo do_shortcode(
+                                '[contact-form-7 id="93" title="Contact Form 7"]'
+                            );
+                        ?&gt;</code></pre></p>   
+
+                                                    </section>
+                                                    
+                                                    <section id="Дополнительные-настройки-Contact-Form-7">
+                                                        <h4><a href="#Дополнительные-настройки-Contact-Form-7" class="m_PageScroll2id">#</a> Дополнительные настройки</h4>
+
+                                                        <p>
+                                                            Вкладка <strong>Дополнительные настройки</strong>
+                                                        </p>
+                                                        <p>
+                                                            <figure>
+                                                                <a href="images/blogs/Screenshot_20.png" data-fancybox aria-label="fancybox">
+                                                                    <img src="images/blogs/Screenshot_20.png" alt="" loading="lazy">
+                                                                </a>
+                                                            </figure>
+                                                        </p>
+                                                        <br>
+                                                        <p>
+                                                            <code class="language-* language-markup">subscribers_only: true</code>  - <i>
+                                                                только для зарегистрированных пользователей.
+                                                            </i>
+                                                        </p>
+                                                        <p>
+                                                            <code class="language-* language-markup">demo_mode: on</code>  - <i>
+                                                                без отправки на почту.
+                                                            </i>
+                                                        </p>
+                                                        <p>
+                                                            <code class="language-* language-markup">acceptance_as_validation: on</code>  - <i>
+                                                                Принудительная проверка полей.
+                                                            </i>
+                                                        </p>
+                                                        <p>
+                                                            <code class="language-* language-markup">on_sent_ok: "alert('sent ok');"</code>  - <i>
+                                                                Выполнение (вывод сообщения 'sent ok') javascript после успешной отправки формы.
+                                                            </i>
+                                                        </p>
+                                                        <p>
+                                                            <code class="language-* language-markup">on_submit: "alert('submit');"</code>  - <i>
+                                                                Выполнение (вывод сообщения 'sent ok') javascript при нажатии на кнопку "Отправить".
+                                                            </i>
+                                                        </p>
+                                                        <p>
+                                                            <a href="https://contactform7.com/additional-settings/" target="_blank" rel="noopener noreferrer" aria-label="link">подробнее на оф. сайте</a>
+                                                        </p>
+                                                    </section>
+
+                                                    <section id="Уведомления-Contact-Form-7">
+                                                        <h4><a href="#Уведомления-Contact-Form-7" class="m_PageScroll2id">#</a> Уведомления</h4>
+
+                                                        <p>
+                                                            Вкладка <strong>Уведомления при отправке формы</strong>
+                                                        </p>
+                                                        <p>
+                                                            <figure>
+                                                                <a href="images/blogs/Screenshot_17.png" data-fancybox aria-label="fancybox">
+                                                                    <img src="images/blogs/Screenshot_17.png" alt="" loading="lazy">
+                                                                </a>
+                                                            </figure>
+                                                        </p>
+                                                        <p>
+                                                            Настройка сообщений об успешной отправке письма или о какой-либо ошибке (некорректный адрес электронной почты, не заполненное обязательное поле).
+                                                        </p>
+                                                    </section>
+
+                                                    <section id="Настройка-отправки-Contact-Form-7">
+                                                        <h4><a href="#Настройка-отправки-Contact-Form-7" class="m_PageScroll2id">#</a> Настройка отправки</h4>
+
+                                                        <p>
+                                                            Вкладка <strong>Письмо</strong>
+                                                        </p>
+                                                        <p>
+                                                            <figure>
+                                                                <a href="images/blogs/Screenshot_14.png" data-fancybox aria-label="fancybox">
+                                                                    <img src="images/blogs/Screenshot_14.png" alt="" loading="lazy">
+                                                                </a>
+                                                            </figure>
+                                                        </p>
+                                                        <p>
+                                                            <strong>Кому</strong> - <i> адрес, на который будут доставляться все сообщения.</i>- <br> <code class="language-* language-markup"> user@example.com </code>
+                                                        </p>
+                                                        <p>
+                                                            <strong>От кого</strong> - <i>имя и электронный ящик, от кого пришло письмо</i> - <br> <code class="language-* language-markup">[your-name] < admin@wpsite.com > </code> <br> из шаблона <code class="language-* language-markup">Ваше имя (обязательно) [text* your-name] </code> 
+                                                        </p>
+                                                        <p>
+                                                            <strong class="b-org">* Если домен почты будет отличаться от домена сайта - форма будет выдавать ошибку.</strong>
+                                                        </p>
+                                                        <p>
+                                                            <strong>Тема</strong> - <i>тема письма</i> - <br> <code class="language-* language-markup">Landing [your-subject] </code> <br>из шаблона <code class="language-* language-markup">Тема [text your-subject]</code> 
+                                                        </p>
+                                                        <p>
+                                                            <strong>Дополнительные заголовки</strong> - <i>на этот электронный ящик можно ответить нажав кнопку "Ответить" в почтовой программе</i> - <br> <code class="language-* language-markup">Reply-To: admin@wpsite.com </code> <br> 
+                                                        </p>
+                                                    </section>
+
+                                                    <section id="Поля-Contact-Form-7">
+                                                        <h4><a href="#Поля-Contact-Form-7" class="m_PageScroll2id">#</a> Поля формы</h4>
+
+                                                        <p>
+                                                            Стандартный минимальный шаблон при создании формы:
+                                                        </p>
+
+                                                        <p><pre class="language-markup"><code><label>Ваше имя (обязательно)
+                        [text* your-name] </label>
+                                                                     
+                        <label>Ваш e-mail (обязательно)
+                        [email* your-email] </label>
+                                                                     
+                        <label>Тема
+                        [text your-subject] </label>
+                                                                     
+                        <label>Сообщение
+                        [textarea your-message] </label>
+                                                                     
+                        [submit "Отправить"]</code></pre></p>
+
+                                                        
+                                                        <p>
+                                                            Поле формы с дополнительными атрибутами:
+                                                        </p>
+                                                        <p><pre class="language-markup"><code><label>Ваше имя (обязательно)
+                        [text* your-name id:your-id class:custom-class class:add-class placeholder "Введите имя"] </label></code></pre></p>       
+                                                        
+                                                        <p>
+                                                            <code class="language-* language-markup">*</code> - <i>обязательное для заполнения поле</i>
+                                                        </p>
+                                                        <p>
+                                                            <code class="language-* language-markup">text</code> - <i>тип поля (text, email, password, ...)</i>
+                                                        </p>    
+                                                        <p>
+                                                            <code class="language-* language-markup">your-name</code> - <i>имя поля - </i> <code class="language-* language-markup">name="your-name"</code>
+                                                        </p>
+                                                        <p>
+                                                            <code class="language-* language-markup">id:your-id</code> - <i>атрибут - </i> <code class="language-* language-markup">id="your-id"</code>
+                                                        </p>
+                                                        <p>
+                                                            <code class="language-* language-markup">class:custom-class class:add-class</code> - <i>атрибут с несколькими значениями - </i> <code class="language-* language-markup">class="custom-class add-class"</code>
+                                                        </p>
+                                                        <p>
+                                                            <code class="language-* language-markup">placeholder "Введите имя"</code> - <i>атрибут - </i> <code class="language-* language-markup">placeholder="Введите имя"</code>
+                                                        </p>
+                                                        <p>
+                                                            <span class="b-green">
+                                                                Просто строка <code class="language-* language-markup">"Введите имя"</code> без атрибута <code class="language-* language-markup">placeholder</code> - будет генерировать атрибут - <code class="language-* language-markup">value="Введите имя"</code>
+                                                            </span>
+                                                        </p>
+                                                        <p>
+                                                            Вид поля формы в html:
+                                                        </p>    
+
+                                                        <p><pre class="language-markup"><code>&lt;span class="wpcf7-form-control-wrap your-name"&gt;
+                            &lt;input type="text" name="your-name" id="your-id" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required custom-class add-class" aria-required="true" aria-invalid="false" placeholder="Введите имя"&gt;
+                        &lt;/span&gt;</code></pre></p>  
+                                                        
+                                                        <p>
+                                                            Верстка более сложного поля формы:
+                                                        </p>
+                                                        <p><pre class="language-markup"><code>&lt;div class="form-row"&gt;
+                            &lt;label for="test-name" class="form-label">Как Вас зовут?*&lt;/label&gt;
+                            [text* test-name id:test-name class:form-input placeholder "ФИО"]
+                        &lt;/div&gt;</code></pre></p>
+
+                                                    </section>
+
+                                                    <section id="Свои-теги-Contact-Form-7">
+                                                        <h4><a href="#Свои-теги-Contact-Form-7" class="m_PageScroll2id">#</a> Свои теги Contact Form 7</h4>
+                                                        
+                                                        <p>
+                                                            Особенность Contact Form 7 - генерировать дополнительные обертки в <code class="language-* language-markup">&lt;p&gt;</code> тег. Отступы в шаблоне кода создают дополнительные <code class="language-* language-markup">&lt;br&gt;</code> теги в html коде.
+                                                        </p>
+                                                        <p>
+                                                            Решение - в файле wordpress/htdocs/<strong>wp-config.php</strong> задать константу - <code class="language-* language-markup">WPCF7_AUTOP</code> со значением <code class="language-* language-markup">false</code>:
+                                                        </p>
+
+                                                        <p><pre class="language-markup"><code>define('WPCF7_AUTOP', false);</code></pre></p>
+                                        
+                                                        <p>
+                                                            Если есть необходимость избавится от обертки <code class="language-* language-markup">&lt;span class="wpcf7-form-control-wrap"&gt;&lt;/span&gt;</code> для любого типа поля.
+                                                        </p>
+                                                        <p>
+                                                            В файле <strong>functions.php</strong> добавить фильтр:
+                                                        </p>
+                                                        <p><pre class="language-markup"><code>add_filter('wpcf7_form_elements', function($content) {
+                            $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+                            return $content;
+                        });</code></pre></p>    
+                                                        
+                                                        <p>
+                                                            <strong class="b-org">
+                                                                С добавлением фильтра, исчезнет не только дополнительная <code class="language-* language-markup">span</code> обертка для <code class="language-* language-markup">input</code>, но и стандартный вывод сообщений об ошибках для поля формы!
+                                                            </strong>
+                                                        </p>
+
+                                                    </section>
+                                                </div>                      
+                                            </div>  
+
+                                        </div>   
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="col-3 grid-item wow bounceInUp y-2" data-wow-delay="0.3s">
                             <div class="portfolio-item">                                
                                 <a data-fancybox data-src="#modal-masterslavl" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/min-15.png" alt="" class="img-fluid">
+                                    <img src="images/works/min-15.png" alt="" class="img-fluid" loading="lazy">
 
                                     <span class="wave"></span>
 
@@ -403,10 +1104,10 @@
                                                     </ul>
                                                 </div>  
                                                 <div class="section-bottom">
-                                                    <a href="http://semen4enko.esy.es/masterslavl/" class="link" target="_blank">
-                                                        Превью
+                                                    <a href="http://semen4enko.esy.es/masterslavl/" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
+                                                        Preview
                                                     </a>
-                                                    <a href="https://www.masterslavl.ru" class="link" target="_blank">
+                                                    <a href="https://www.masterslavl.ru" class="link" target="_blank" rel="noopener noreferrer" aria-label="Preview link">
                                                         www.masterslavl.ru
                                                     </a>
                                                 </div>                      
@@ -417,10 +1118,10 @@
                                         <div class="col-8 modal-right">
                                             <div class="modal-slider">
                                                 <div class="item">
-                                                    <img data-lazy="images/works/ms/1.png" alt="">
+                                                    <img data-lazy="images/works/ms/1.png" alt="" loading="lazy">
                                                 </div>
                                                 <div class="item">
-                                                    <img data-lazy="images/works/ms/2.png" alt="">
+                                                    <img data-lazy="images/works/ms/2.png" alt="" loading="lazy">
                                                 </div>                      
                                             </div>                    
                                         </div>   
@@ -428,550 +1129,16 @@
                                     </div>
                                 </div>
 
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.4s">
-                            <div class="portfolio-item">                                
-                                <a data-fancybox data-src="#modal-omegaart" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/min-2.png" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>OmegaArt</strong>      
-                                        </span>
-                                    </span>
-                                </a>
-
-                                <div id="modal-omegaart" class="modal">  
-                                    <div class="row modal-content align-items-center">
-
-                                        <div class="col-4 modal-left ">                 
-
-                                            <div class="portfolio-description">
-                                                <h2 class="section-title">OmegaArt</h2>
-                                                <div class="section-body" data-lang="scanlite_line">
-                                                    <p>
-                                                        Изготовление и монтаж наружной рекламы.
-                                                    </p>
-                                                    <p>
-                                                        Задача была создать дизайн и адаптивную верстку лендинга. Были предаставлены материалы и цветовая схема (красный, черный и белые тона). 
-                                                    </p> 
-                                                    <p>
-                                                        Использованные технологии: CSS3, HTML5, Bootstrap 4 (flex), jQuery, svg.
-                                                    </p>
-                                                </div>  
-                                                <div class="section-bottom">
-                                                    <a href="http://omegaart.ru/" class="link" target="_blank">
-                                                        omegaart.ru
-                                                    </a>
-                                                </div>                      
-                                            </div>  
-
-                                        </div>   
-
-                                        <div class="col-8 modal-right">
-                                            <div class="modal-slider">
-                                                <div class="item">
-                                                    <img data-lazy="images/works/omegaart/1.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img data-lazy="images/works/omegaart/2.png" alt="">
-                                                </div>                      
-                                            </div>                    
-                                        </div>   
-
-                                    </div>
-                                </div>
                             </div>
                         </div>                        
 
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="portfolio-item">                                
-                                <a data-fancybox data-src="#modal-foodjistica" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/work-12.jpg" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>FOODJISTICA</strong>      
-                                        </span>
-                                    </span>
-                                </a>
-
-                                <div id="modal-foodjistica" class="modal">                             
-
-                                    <div class="row modal-content align-items-center">
-
-                                        <div class="col-4 modal-left ">                 
-
-                                            <div class="portfolio-description">
-                                                <h2 class="section-title">FOODJISTICA</h2>
-                                                <div class="section-body" data-lang="scanlite_line">
-                                                    <p>
-                                                        Foodjistica помогаем покупателям найти и заказать домашнюю еду, подготовиться к празднику, а поварам найти новых покупателей.
-                                                    </p> 
-                                                    <p>
-                                                        Задача была создать кроссбраузерную и адаптивную верстку многостраничного сайта с использованием Bootstrap 3 фреймворка.
-                                                    </p>  
-                                                    <p>
-                                                        Веб технологии:
-                                                    </p>
-                                                    <ul>
-                                                        <li>HTML</li>
-                                                        <li>CSS</li>
-                                                        <li>Botstrap 3</li>
-                                                    </ul>
-                                                </div>  
-                                                <div class="section-bottom">
-                                                    <a href="http://semen4enko.esy.es/foodjistica/" class="link" target="_blank">
-                                                        Превью
-                                                    </a>
-                                                </div>                      
-                                            </div>  
-
-                                        </div>   
-
-                                        <div class="col-8 modal-right">
-                                            <div class="modal-slider">
-                                                <div class="item">
-                                                    <img data-lazy="images/works/foodjistica/f-1.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img data-lazy="images/works/foodjistica/f-2.jpg" alt="">
-                                                </div>                      
-                                            </div>                    
-                                        </div>   
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.6s">
-                            <div class="portfolio-item">    
-
-                                <a data-fancybox data-src="#modal-scanlite" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/work-14.jpg" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>ScanLite</strong>      
-                                        </span>
-                                    </span>
-                                </a>
-
-                                <div id="modal-scanlite" class="modal">                                 
-
-                                    <div class="row modal-content align-items-center">
-
-                                        <div class="col-4 modal-left ">                 
-
-                                            <div class="portfolio-description">
-                                                <h2 class="section-title">SCANLITE</h2>
-                                                <div class="section-body" data-lang="scanlite_line">
-                                                    <p>
-                                                        Компания оcуществляет продажу контрольно-кассовой техники
-                                                    </p> 
-                                                    <p>
-                                                        Задача была создать кроссбраузерную и адаптивную верстку многостраничного сайта с использованием Bootstrap 3 фреймворка.
-                                                    </p>  
-                                                    <p>
-                                                        Веб технологии:
-                                                    </p>
-                                                    <ul>
-                                                        <li>HTML</li>
-                                                        <li>CSS</li>
-                                                        <li>Botstrap 3</li>
-                                                    </ul>
-                                                </div>  
-                                                <div class="section-bottom">
-                                                    <a href="http://semen4enko.esy.es/scanlite/" class="link" target="_blank">
-                                                        Превью
-                                                    </a>
-                                                </div>                      
-                                            </div>  
-
-                                        </div>   
-
-                                        <div class="col-8 modal-right">
-                                            <div class="modal-slider">
-                                                <div class="item">
-                                                    <img data-lazy="images/works/scanlite/scanlite-1.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img data-lazy="images/works/scanlite/scanlite-3.jpg" alt="">
-                                                </div>                       
-                                            </div>                    
-                                        </div>   
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="portfolio-item">                                
-                                <a data-fancybox data-src="#modal-trans-si" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/min-18.png" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>Транс-си</strong>      
-                                        </span>
-                                    </span>
-                                </a>
-
-                                <div id="modal-trans-si" class="modal">  
-                                    <div class="row modal-content align-items-center">
-
-                                        <div class="col-4 modal-left ">                 
-
-                                            <div class="portfolio-description">
-                                                <h2 class="section-title">Транс-си</h2>
-                                                <div class="section-body" data-lang="scanlite_line">
-                                                    <p>
-                                                        Первевозка наливных грузов.
-                                                    </p> 
-                                                    <p>
-                                                        Задача была создать адаптивный сайт с современной fullPage анимацией.
-                                                    </p> 
-                                                    <p>
-                                                        Для создания front-end страничек использованы: CSS3, HTML5, flex, jQuery, svg.
-                                                    </p>
-                                                </div>  
-                                                <div class="section-bottom">
-                                                    <a href="http://semen4enko.esy.es/trans-si/" class="link" target="_blank">
-                                                        Превью
-                                                    </a>
-                                                    <a href="http://trans-si.ru" class="link" target="_blank">
-                                                        trans-si.ru
-                                                    </a>
-                                                    
-                                                </div>                      
-                                            </div>  
-
-                                        </div>   
-
-                                        <div class="col-8 modal-right">
-                                            <div class="modal-slider">
-                                                <div class="item">
-                                                    <img data-lazy="images/works/trans-si/1.png" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img data-lazy="images/works/trans-si/2.png" alt="">
-                                                </div> 
-                                                <div class="item">
-                                                    <img data-lazy="images/works/trans-si/3.jpg" alt="">
-                                                </div>                       
-                                            </div>                    
-                                        </div>   
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp y-2" data-wow-delay="0.8s">
-                            <div class="portfolio-item">                                
-                                <a data-fancybox data-src="#modal-spravnik" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/work-3.png" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>СправникЪ</strong>      
-                                        </span>
-                                    </span>
-                                </a>
-
-                                <div id="modal-spravnik" class="modal">  
-                                    <div class="row modal-content align-items-center">
-
-                                        <div class="col-4 modal-left ">                 
-
-                                            <div class="portfolio-description">
-                                                <h2 class="section-title">СправникЪ</h2>
-                                                <div class="section-body" data-lang="scanlite_line">
-                                                    <p>
-                                                        Выездной ремонт техники APPLE и PC.
-                                                    </p> 
-                                                    <p>
-                                                        Задача была создать адаптивную верстку сайта с анимированным смартфоном.
-                                                    </p>  
-                                                    <p>
-                                                        Для анимации был использован ScrollMagic плагин. Смартфон меняет свой вид от поврежденного до отремонтрованного.
-                                                    </p>
-                                                    <p>
-                                                        Для создания front-end странички использованы: CSS3, HTML5, jQuery.
-                                                    </p>
-                                                </div>  
-                                                <div class="section-bottom">
-                                                    <a href="http://semen4enko.esy.es/spravnic/" class="link" target="_blank">
-                                                        Превью
-                                                    </a>
-                                                </div>                      
-                                            </div>  
-
-                                        </div>   
-
-                                        <div class="col-8 modal-right">
-                                            <div class="modal-slider">
-                                                <div class="item">
-                                                    <img data-lazy="images/works/apple/1.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img data-lazy="images/works/apple/2.jpg" alt="">
-                                                </div>                        
-                                            </div>                    
-                                        </div>   
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-6 grid-item wow bounceInUp y-1" data-wow-delay="0.9s">
-                            <div class="portfolio-item">                                
-                                <a href="https://codepen.io/semenchenko/full/adxboN/" target="_blank" class="portfolio-link">
-                                    <img src="images/works/work-6.png" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>3D Cube</strong>      
-
-                                            <span class="portfolio-ico">
-
-                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
-                                            </span>
-
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp y-2" data-wow-delay="1.0s">
-                            <div class="portfolio-item">                                
-                                <a data-fancybox data-src="#modal-mb" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/work-8.png" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>Мастер Банкета</strong>      
-                                        </span>
-                                    </span>
-                                </a>
-
-                                <div id="modal-mb" class="modal">  
-                                    <div class="row modal-content align-items-center">
-
-                                        <div class="col-4 modal-left ">                 
-
-                                            <div class="portfolio-description">
-                                                <h2 class="section-title">Мастер Банкета</h2>
-                                                <div class="section-body" data-lang="scanlite_line">
-                                                    <p>
-                                                        Бесплатная система поиска банкетных залов и ресторанов для проведения любых торжеств и мероприятий.
-                                                    </p> 
-                                                    <p>
-                                                        Задача была создать кроссбраузерную и адаптивную верстку сайта с фильтром выбора зала.
-                                                    </p>  
-                                                    <p>
-                                                        Для создания front-end страничек CSS3, HTML5, jQuery.
-                                                    </p>
-                                                </div>  
-                                                <div class="section-bottom">
-                                                    <a href="http://banketmaster.ru/" class="link" target="_blank">
-                                                        Превью
-                                                    </a>
-                                                </div>                      
-                                            </div>  
-
-                                        </div>   
-
-                                        <div class="col-8 modal-right">
-                                            <div class="modal-slider">
-                                                <div class="item">
-                                                    <img data-lazy="images/works/restauran/1.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img data-lazy="images/works/restauran/3.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img data-lazy="images/works/restauran/2.jpg" alt="">
-                                                </div>                        
-                                            </div>                    
-                                        </div>   
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.1s">
-                            <div class="portfolio-item">                                
-                                <a data-fancybox data-src="#modal-email" href="javascript:;" class="portfolio-link">
-                                    <img src="images/works/work-101.png" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>HTML Email</strong>      
-                                        </span>
-                                    </span>
-                                </a>
-                                <div id="modal-email" class="modal">  
-                                    <div class="row modal-content align-items-center">
-
-                                        <div class="col-4 modal-left ">                 
-
-                                            <div class="portfolio-description">
-                                                <h2 class="section-title">HTML Email</h2>
-                                                <div class="section-body" data-lang="scanlite_line">
-                                                    <p>
-                                                        Я специализируюсь на создании шаблонов электронной почты в HTML CSS, который будет отображаться на всех почтовых клиентах (Gmail, Outlook, Yahoo Mail, etc).
-                                                    </p> 
-                                                    <p>
-                                                        А также могу создавать адаптивные HTML письма для мобильных телефонов.
-                                                    </p>  
-                                                </div>  
-                                                <div class="section-bottom">
-                                                    <a href="https://codepen.io/semenchenko/full/ojEvXO" class="link" target="_blank">
-                                                        Пример письма
-                                                    </a>
-                                                </div>                      
-                                            </div>  
-
-                                        </div>   
-
-                                        <div class="col-8 modal-right">
-                                            <div class="modal-slider">
-                                                <div class="item">
-                                                    <img data-lazy="images/works/mail/1.jpg" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img data-lazy="images/works/mail/2.jpg" alt="">
-                                                </div>                         
-                                            </div>                    
-                                        </div>   
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.2s">
-                            <div class="portfolio-item">                                
-                                <a href="https://codepen.io/semenchenko/full/XKaYVN/" target="_blank" class="portfolio-link">
-                                    <img src="images/works/work-4.png" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>Ui Card</strong>      
-
-                                            <span class="portfolio-ico">
-
-                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
-                                            </span>
-
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.3s">
-                            <div class="portfolio-item">                                
-                                <a href="https://www.behance.net/gallery/43880335/Blog-design" class="portfolio-link" target="_blank">
-                                    <img src="images/works/work-5.png" alt="" class="img-fluid">
-
-                                    <span class="wave"></span>
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>Blog design</strong> 
-
-                                            <span class="portfolio-ico">
-                                                
-                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
-                                            </span>     
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.4s">
-                            <div class="portfolio-item portfolio-blog bg-green">                                
-                                <a href="post-cf7.html" class="portfolio-link" target="_blank">
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>
-                                                Настройка <br>
-                                                Contact Form 7
-                                            </strong> 
-
-                                            <span class="blog-meta">Blog post</span>
-
-                                            <span class="portfolio-ico">
-                                                
-                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
-                                            </span>     
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-3 grid-item wow bounceInUp" data-wow-delay="1.5s">
-                            <div class="portfolio-item portfolio-blog bg-blue">                                
-                                <a href="https://github.com/lime7/gulp-project" target="_blank" class="portfolio-link" target="_blank">
-
-                                    <span class="mask">
-                                        <span class="inner">
-                                            <strong>
-                                                Моя сборка <br>
-                                                Gulp
-                                            </strong> 
-
-                                            <span class="blog-meta">Blog post</span>
-
-                                            <span class="portfolio-ico">
-                                                
-                                                <svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M23.083 13.209v3.875c0 3.309-2.691 6-6 6h-10c-3.309 0-6-2.691-6-6v-10c0-3.309 2.691-6 6-6h3.126v2H7.083c-2.206 0-4 1.794-4 4v10c0 2.206 1.794 4 4 4h10c2.206 0 4-1.794 4-4v-3.875h2zm.008-12.084s-.844 1.625-2.967 2.338c-2.123.714-6.562.228-10.534 2.664-3.974 2.436-4.111 6.821-3.866 8.281.141.84.658 1.293 1.073 1.527.168-.955.428-1.973.843-2.957 1.835-3.854 5.429-5.004 6.028-5.255.32-.124.902-.305 1.594-.483.701-.161 1.451-.367 2.186-.681a25.46 25.46 0 0 0 2.707-1.272c.004.001-1.17.874-2.584 1.647-.689.404-1.498.735-2.166.963-.67.25-1.221.474-1.531.592-.305.125-1.269.479-2.366 1.292-.558.415-1.111.918-1.708 1.572-.546.548-.991 1.294-1.305 2.118-.549 1.439-.744 3.025-.812 4.299.352.523 1.035.994 2.342 1.088 11.296-1.2 13.066-17.733 13.066-17.733z"></path></svg>
-                                            </span>     
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
+                          --> 
+                         
                     </div>
 
                     <div class="section-footer ">
-                        ЭТОГО НЕ ДОСТАТОЧНО? 
-                        <strong>Скоро будет больше ...</strong>
+                        THIS IS NOT ENOUGH?
+                        <strong>Coming soon ...</strong>
 
                         <svg height="512pt" viewBox="-50 0 511 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
                             <path class="path" d="m201.03125 205.082031h-30v-32.148437c0-21.3125 17.335938-38.648438 38.648438-38.648438h24.121093c6.742188 0 12.230469-5.484375 12.230469-12.230468 0-6.742188-5.488281-12.226563-12.230469-12.226563h-92.542969c-23.285156 0-42.226562-18.945313-42.226562-42.230469v-1.785156c0-23.285156 18.941406-42.230469 42.226562-42.230469h67.835938c8.855469 0 16.0625-7.203125 16.0625-16.0625v-7.519531h30v7.519531c0 25.402344-20.664062 46.066407-46.0625 46.066407h-67.835938c-6.742187 0-12.226562 5.484374-12.226562 12.226562v1.785156c0 6.746094 5.484375 12.230469 12.226562 12.230469h92.542969c23.285157 0 42.230469 18.945313 42.230469 42.230469s-18.945312 42.226562-42.230469 42.226562h-24.121093c-4.769532 0-8.648438 3.878906-8.648438 8.648438zm0 0" fill="#c8ad92"/>
@@ -1000,135 +1167,29 @@
                                 Ukraine
                             </p>
                             <p>
-                                <a href="mailto:sv4e.space@gmail.com">
+                                <a href="mailto:sv4e.space@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Contact link">
                                     <i class="fas fa-envelope"></i> sv4e.space@gmail.com
                                 </a>
                             </p>
                             <p>
-                                <a href="skype:S_Elena_27?chat">
-                                    <i class="fab fa-skype"></i> S_Elena_27
+                                <a href="https://t.me/semen4enkov" target="_blank" rel="noopener noreferrer" aria-label="Contact link">
+                                    <i class="fab fa-telegram-plane"></i> Elena S
                                 </a>
                             </p>
                         </div>
                         <div class="copyright">
-                            &copy; 2019 <strong>SVE</strong>
+                            &copy; 2021 <strong>SVE</strong>
                         </div>
                     </div>
                 </div>
             </div>
         </footer> <!-- Page Footer : end -->
 
-        <!-- Fancybox Modal : start -->
-        <!-- <a data-fancybox data-src="#callback" href="javascript:;" class="btn btn-success">Перезвоните мне</a> -->
-        <!-- <div id="callback" class="fancy-modal">           
-
-            <form class="form">
-                <div class="row">
-                    <div class="col-6">
-                        
-                        <div class="form-thumb">
-                            <img src="images/img-1.png" alt="">
-                        </div>                        
-
-                    </div>
-                    <div class="col-6">
-                        <div class="form-inner">
-                            <h2 class="text-center mb-30">
-                                Написать мне
-                            </h2>
-
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" data-rule-required="true" data-msg="Ошибка при заполнении" placeholder="Ваше имя">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" name="theme" class="form-control" data-rule-required="true" data-msg="Ошибка при заполнении" placeholder="Тема сообщения">
-                            </div>
-
-                            <div class="form-group">
-                                <textarea name="msg" class="form-control" placeholder="Сообщение"></textarea>
-
-                            </div>
-
-                            <div class="form-text">
-                                <i>*</i> Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных 
-                            </div>
-
-                            <div class="row text-center">
-                                <div class="col-12">
-                                    <input type="submit" value="Отправить" class="btn">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </form>
-
-        </div>   -->
-
-        <!-- <a data-fancybox data-src="#success-form" href="javascript:;">Успешная отправка</a> -->
-        <div id="success-form" class="fancy-modal">
-            <div class="section-head">
-                <h2 class="section-title">
-                    Спасибо! 
-                </h2>
-            </div>
-            <div class="section-meta">
-                Заявка успешно отправлена.
-            </div>
-        </div>
-        <!-- Fancybox Modal : end -->        
-
     </div>
-
-
-
-    <!-- <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-73888304-1', 'auto');
-      ga('send', 'pageview');
-    
-    </script> -->
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter35414655 = new Ya.Metrika({
-                        id:35414655,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true,
-                        trackHash:true
-                    });
-                } catch(e) { }
-            });
-    
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-    
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/35414655" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
     
 
     <!-- Vendor JS -->
-    <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/slick/slick.min.js"></script> 
     <script src="libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="libs/validation/jquery.validate.min.js"></script>  
@@ -1144,7 +1205,9 @@
     <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
     <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/prism.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script> 
 
     
     <script src="js/liquid.js"></script>

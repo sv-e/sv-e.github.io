@@ -1418,8 +1418,9 @@ a.mPS2id-highlight:after {
     margin: auto;
     background: #fff;
     overflow: hidden;
-    /*-webkit-box-shadow: 0 0 15px rgba(128, 130, 133, 0.52);
-            box-shadow: 0 0 15px rgba(128, 130, 133, 0.52);*/
+    -webkit-box-shadow: -7px -7px 17px rgba(255,255,255,.5), 7px 7px 17px rgba(0,0,0,.05);
+            box-shadow: -7px -7px 17px rgba(255,255,255,.5), 7px 7px 17px rgba(0,0,0,.05);
+    
 
     -webkit-transition: all .3s ease-in-out;
          -o-transition: all .3s ease-in-out;
@@ -1427,8 +1428,8 @@ a.mPS2id-highlight:after {
 }
 
 .portfolio-item:hover {
-    -webkit-box-shadow: 0 0 25px rgba(128, 130, 133, 0.72);
-            box-shadow: 0 0 25px rgba(128, 130, 133, 0.72);
+    -webkit-box-shadow: -7px -7px 17px rgba(255,255,255,1), 7px 7px 17px rgba(0,0,0,.27);
+            box-shadow: -7px -7px 17px rgba(255,255,255,1), 7px 7px 17px rgba(0,0,0,.27);
 }
 
 .portfolio-ico {
@@ -2095,7 +2096,7 @@ pre[class*=language-] {
     -webkit-box-shadow: 0 7px 27px rgba(0,0,0,.32);
        -moz-box-shadow: 0 7px 27px rgba(0,0,0,.32);
             box-shadow: 0 7px 27px rgba(0,0,0,.32);
-    margin: 1rem auto;
+    margin: 3rem auto 1rem;
 
 
     -webkit-box-flex: 0;
@@ -2144,15 +2145,13 @@ pre[class*=language-] {
     -webkit-box-shadow: 0 7px 27px rgba(0,0,0,.32);
        -moz-box-shadow: 0 7px 27px rgba(0,0,0,.32);
             box-shadow: 0 7px 27px rgba(0,0,0,.32);
-    margin: 0 auto;
-
 
     max-width: 75%;
     width: 62.5%;
-    margin: 0;
-    height: 50%;
+    margin: 1rem 0 0;
+    /*height: 50%;*/
     /*max-height: 90%;*/
-    min-height: 30rem;
+    /*min-height: 30rem;*/
 }
 
 .fancybox-bg {
@@ -2223,19 +2222,20 @@ pre[class*=language-] {
 
 .modal-slider {
     position: relative;
-    height: 100%;
-    height: 30rem;
+    /*height: 100%;*/
+    /*height: 30rem;*/
 }
 
-.modal-slider div {
+/*.modal-slider div {
     height: 100%;
-}
+}*/
 
 .modal-slider img {
-    height: 100%;
+    /*height: 100%;
     width: 100%;
     -o-object-fit: cover;
-    object-fit: cover;
+    object-fit: cover;*/
+    max-width: 100%;
 }
 
 .fancybox-is-open .modal-right {
@@ -2353,7 +2353,7 @@ textarea.form-control {
     font-size: 2rem;
     line-height: 2rem;
     height: 2rem;
-    bottom: 1rem;
+    top: 1rem;
 }
 
 .slick-prev {
@@ -2422,7 +2422,8 @@ textarea.form-control {
     padding: .5rem 0;
     border-radius: 20px;
 
-    box-shadow: 0px 2px 27px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: -7px -7px 17px rgba(255,255,255,1), 7px 7px 17px rgba(0,0,0,.1);
+            box-shadow: -7px -7px 17px rgba(255,255,255,1), 7px 7px 17px rgba(0,0,0,.1);
 }
 
 .tipso .small {
