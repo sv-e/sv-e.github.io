@@ -2586,6 +2586,7 @@ textarea.form-control {
     .modal-slider,
     .modal-slider div {
         height: auto;
+        min-height: 10rem;
     }
 
     .fancybox-is-open .fancybox-bg {
@@ -2594,6 +2595,25 @@ textarea.form-control {
 
     .intro .btn, .intro-title, .intro-subtitle, .intro-body p {
         opacity: 1 !important;
+    }
+
+
+    .wow {
+        visibility: visible !important;
+        opacity: 1 !important;
+        -webkit-animation: none !important;
+        -o-animation: none !important;
+        animation: none !important;
+    }
+
+    .fancybox-bg:before, .fancybox-bg:after {
+        content: none;
+    }
+
+    .wave:after, .wave:before {
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
 }
 
